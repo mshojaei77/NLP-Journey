@@ -30,7 +30,7 @@ Explore this course in-depth and follow along with the schedule and syllabus:
 
 The quintessential challenge in NLP stems from the complexity and adaptability of human language. One illustrative example comes from an XKCD comic:
 
-> ![XKCD Comic](https://imgs.xkcd.com/comics/words.png)
+> ![image](https://github.com/user-attachments/assets/58ba4aa5-1e5b-4a26-95a8-deee745d33d0)
 >  
 > "Language isn't a formal system; language is glorious chaos. You can never know for sure what any words will mean to anyone. All you can do is try to get better at guessing how your words affect people." - Randall Munroe, XKCD
 

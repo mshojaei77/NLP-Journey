@@ -1,12 +1,10 @@
-## NLP Journey - Roadmap to Learn LLMs from Scratch with Modern NLP Methods in 2024
-
-### Overview
+# NLP Journey - Roadmap to Learn LLMs from Scratch with Modern NLP Methods in 2024
 
 This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond.  We'll leverage Jupyter Notebooks for hands-on practice.
 
 **Note:** The resources listed below include text-based tutorials, academic papers, GitHub repositories, and (where available) Jupyter Notebooks.
 
-### Chapter 1: Foundations of NLP
+## Chapter 1: Foundations of NLP
 
 #### Core NLP Concepts
 
@@ -31,7 +29,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 | Word2Vec, GloVe, FastText                                     | [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/), [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html), [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | []         |
 | Contextual Embeddings (ELMo, BERT)                            |  [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html)                  | []         |
 
-### Chapter 2: Essential NLP Tasks & Algorithms
+## Chapter 2: Essential NLP Tasks & Algorithms
 
 | Topic                                                    | Resources                                                                                          | Practices |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------------|-----------|
@@ -53,7 +51,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 | Machine Translation | [Berkeley Aligner](https://code.google.com/p/berkeleyaligner/), [cdec](https://github.com/redpony/cdec), [Jane](http://www-i6.informatik.rwth-aachen.de/jane/), [Joshua](http://joshua-decoder.org/), [Moses](http://www.statmt.org/moses/), [alignment-with-openfst](https://github.com/ldmt-muri/alignment-with-openfst), [zmert](http://cs.jhu.edu/~ozaidan/zmert/)  | [] |
 | Text Summarization | [IndoSum](https://github.com/kata-ai/indosum), [Cohere Summarize Beta](https://txt.cohere.ai/summarize-beta/) | [] |
 
-### Chapter 3: Deep Learning for NLP
+## Chapter 3: Deep Learning for NLP
 
 #### Neural Network Fundamentals
 
@@ -77,9 +75,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 | Convolutional Neural Networks (CNNs) for Text  (Classification, Hierarchical CNNs) | [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/), [Kim Yoon: Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) |  [] |
 | Sequence-to-Sequence Models (Attention, Transformers, T5, BART) | [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/), [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html), [Hugging Face: T5](https://huggingface.co/docs/transformers/model_doc/t5), [Hugging Face: BART](https://huggingface.co/docs/transformers/model_doc/bart) |  [] |
 
-### Chapter 4: Large Language Models (LLMs)
+## Chapter 4: Large Language Models (LLMs)
 
-####The Transformer Architecture 
+#### The Transformer Architecture 
 
 | Topic                                                            | Resources                                                                                                         | Practices |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------|
@@ -133,7 +131,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 |   - Agents & Tools (Google Search, Wikipedia, Python, Jira) | [LangChain Agents](https://python.langchain.com/docs/modules/agents/)                                                                |  [] |
 |   - Programmatic LLMs (DSPy)                           | [DSPy](https://github.com/stanfordnlp/dspy), [dspy](https://github.com/stanfordnlp/dspy)                                                                                    |  [] |
 
-### Chapter 6: Multimodal Learning & Applications
+## Chapter 5: Multimodal Learning & Applications
 
 | Topic                                                    | Resources                                                                                                                    | Practices |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -142,7 +140,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 | Text-to-Image Generation, Video Understanding           | [Stability AI: Stable Diffusion](https://stability.ai/stable-image), [OpenAI DALL-E 2](https://openai.com/dall-e-2), [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification), [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)  |  [] |
 | Emerging Trends (Neuro-Symbolic AI, LLMs for Robotics)  |                                                                                                                                 | []         |
 
-### Chapter 7: Deployment & Productionizing LLMs
+## Chapter 6: Deployment & Productionizing LLMs
 
 #### Deployment Strategies
 

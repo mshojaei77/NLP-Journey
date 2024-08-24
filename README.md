@@ -14,8 +14,8 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 | Topic                                                    | Resources                                                                                   | Practices |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------|
-| Tokenization (Word, Subword - BPE, SentencePiece)        |[Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index), [minbpe](https://www.youtube.com/watch?v=zduSFxRajkE&t=1157s) | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ)          |
-| Stemming & Lemmatization                                | [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html)                         | []         |
+| Tokenization (Word, Subword - BPE, SentencePiece)        |[Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index), [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s)|  []       |
+| Stemming & Lemmatization                                | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html), [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html)                         | []         |
 | Stop Word Removal, Punctuation Handling                 | [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus)                         | []         |
 | Bag-of-Words (BoW), TF-IDF, N-grams                      | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | []         |
 

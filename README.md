@@ -113,16 +113,16 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 | Topic                                                    | Resources                                                                                                                      | Practices |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------|
-|   - Document Loaders, Text Splitters                  | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/), [LlamaIndex Data Connectors](https://gpt-index.readthedocs.io/en/latest/guides/primer/data_connectors.html) |  [] |
-|   - Embedding Models                                    | [Sentence Transformers Library](https://www.sbert.net/), [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard), [InferSent](https://github.com/facebookresearch/InferSent)          |  [] |
-|   - Vector Databases (Chroma, Pinecone, Milvus, FAISS, Annoy) | [Chroma](https://www.trychroma.com/), [Pinecone](https://www.pinecone.io/), [Milvus](https://milvus.io/), [FAISS](https://faiss.ai/), [Annoy](https://github.com/spotify/annoy)  |  [] |
-|   - Orchestrators (LangChain, LlamaIndex, FastRAG)       | [LangChain](https://python.langchain.com/), [LlamaIndex](https://docs.llamaindex.ai/en/stable/), [FastRAG](https://github.com/IntelLabs/fastRAG), [🦜🔗 Awesome LangChain](https://github.com/kyrolabs/awesome-langchain) |  [] |
-|   - Query Expansion, Re-ranking, HyDE                    | [HyDE](https://arxiv.org/abs/2212.10496), [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers/)                              |  [] |
-|   - RAG Fusion                                           | [RAG-fusion](https://github.com/Raudaschl/rag-fusion)                                                                         |  [] |
-|   - Evaluation (Context Precision/Recall, Faithfulness, Relevancy, Ragas, DeepEval) | [Ragas](https://github.com/explodinggradients/ragas/tree/main), [DeepEval](https://github.com/confident-ai/deepeval)                |  [] |
-|   - Query Construction (SQL, Cypher)                     | [LangChain Query Construction](https://blog.langchain.dev/query-construction/), [LangChain SQL](https://python.langchain.com/docs/use_cases/qa_structured/sql) |  [] |
-|   - Agents & Tools (Google Search, Wikipedia, Python, Jira) | [LangChain Agents](https://python.langchain.com/docs/modules/agents/)                                                                |  [] |
-|   - Programmatic LLMs (DSPy)                           | [DSPy](https://github.com/stanfordnlp/dspy), [dspy](https://github.com/stanfordnlp/dspy)                                                                                    |  [] |
+|   Document Loaders, Text Splitters                  | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/), [LlamaIndex Data Connectors](https://gpt-index.readthedocs.io/en/latest/guides/primer/data_connectors.html) |  [] |
+|   Embedding Models                                    | [Sentence Transformers Library](https://www.sbert.net/), [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard), [InferSent](https://github.com/facebookresearch/InferSent)          |  [] |
+|   Vector Databases (Chroma, Pinecone, Milvus, FAISS, Annoy) | [Chroma](https://www.trychroma.com/), [Pinecone](https://www.pinecone.io/), [Milvus](https://milvus.io/), [FAISS](https://faiss.ai/), [Annoy](https://github.com/spotify/annoy)  |  [] |
+|   Orchestrators (LangChain, LlamaIndex, FastRAG)       | [LangChain](https://python.langchain.com/), [LlamaIndex](https://docs.llamaindex.ai/en/stable/), [FastRAG](https://github.com/IntelLabs/fastRAG), [🦜🔗 Awesome LangChain](https://github.com/kyrolabs/awesome-langchain) |  [] |
+|   Query Expansion, Re-ranking, HyDE                    | [HyDE](https://arxiv.org/abs/2212.10496), [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers/)                              |  [] |
+|   RAG Fusion                                           | [RAG-fusion](https://github.com/Raudaschl/rag-fusion)                                                                         |  [] |
+|   Evaluation (Context Precision/Recall, Faithfulness, Relevancy, Ragas, DeepEval) | [Ragas](https://github.com/explodinggradients/ragas/tree/main), [DeepEval](https://github.com/confident-ai/deepeval)                |  [] |
+|   Query Construction (SQL, Cypher)                     | [LangChain Query Construction](https://blog.langchain.dev/query-construction/), [LangChain SQL](https://python.langchain.com/docs/use_cases/qa_structured/sql) |  [] |
+|   Agents & Tools (Google Search, Wikipedia, Python, Jira) | [LangChain Agents](https://python.langchain.com/docs/modules/agents/)                                                                |  [] |
+|   Programmatic LLMs (DSPy)                           | [DSPy](https://github.com/stanfordnlp/dspy), [dspy](https://github.com/stanfordnlp/dspy)                                                                                    |  [] |
 
 ## Chapter 5: Multimodal Learning & Applications
 

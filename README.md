@@ -10,8 +10,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 | Topic                                       | Resources                                           | 
 |---------------------------------------------|------------------------------------------------------|
-| Introduction to NLP                       | [What is Natural Language Processing (NLP)?)](https://www.datacamp.com/blog/what-is-natural-language-processing) | 
-| Syntax, Semantics, Pragmatics, Discourse | [What is Natural Language Processing (NLP)?)](https://www.datacamp.com/blog/what-is-natural-language-processing) |
+| Introduction to NLP: Syntax, Semantics, Pragmatics, Discourse                      | [What is Natural Language Processing (NLP)?)](https://www.datacamp.com/blog/what-is-natural-language-processing) | 
 
 #### Text Preprocessing & Feature Engineering 
 

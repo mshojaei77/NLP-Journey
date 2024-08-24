@@ -143,9 +143,3 @@ This repository provides a comprehensive guide on leveraging Jupyter Notebooks f
 | **Data Cleaning and Preprocessing** | **Handling Missing Data in NLP**                | [Handling Missing Data in NLP](link-to-missing-data-handling)                                                                                             | [Cleaning and Preprocessing Text Data](link-to-data-cleaning-notebook)                                                                                                                               |
 | **Data Augmentation**       | **Techniques for Augmenting Text Data**            | [Data Augmentation for NLP](link-to-data-augmentation-for-nlp)                                                                                            | [Implementing Data Augmentation Techniques](link-to-data-augmentation-implementation-notebook)                                                                                                        |
 | **Data Storage and Management** | **Working with Large Text Datasets**             | [Managing Large Datasets](link-to-managing-large-datasets)                                                                                              | [Storing and Accessing Text Data Efficiently](link-to-data-storage-notebook)                                                                                                                            |
-
-
-## Prerequisites
-
-- Familiarity with Python programming language
-- Experience with Jupyter Notebooks

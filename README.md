@@ -8,10 +8,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 #### Core NLP Concepts
 
-| Topic                                       | Resources                                           | Practices |
-|---------------------------------------------|------------------------------------------------------|-----------|
-| Introduction to NLP                       | [Speech and Language Processing (Jurafsky & Martin)](https://web.stanford.edu/~jurafsky/slp3/) | []         |
-| Syntax, Semantics, Pragmatics, Discourse | [Speech and Language Processing (Jurafsky & Martin)](https://web.stanford.edu/~jurafsky/slp3/) | []         |
+| Topic                                       | Resources                                           | 
+|---------------------------------------------|------------------------------------------------------|
+| Introduction to NLP                       | [What is Natural Language Processing (NLP)?)](https://www.datacamp.com/blog/what-is-natural-language-processing) | 
+| Syntax, Semantics, Pragmatics, Discourse | [What is Natural Language Processing (NLP)?)](https://www.datacamp.com/blog/what-is-natural-language-processing) |
 
 #### Text Preprocessing & Feature Engineering 
 

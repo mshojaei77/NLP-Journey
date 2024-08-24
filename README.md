@@ -53,7 +53,7 @@ This repository provides a comprehensive guide on leveraging Jupyter Notebooks f
 | **Machine Translation** | **Neural Machine Translation (NMT)** | [Neural Machine Translation Tutorial](link-to-nmt-tutorial) | [Building a Neural Machine Translation Model](link-to-nmt-implementation-notebook) |
 
 
-## 3.  Working with Large Language Models (LLMs)
+## 3.  Large Language Models (LLMs)
 
 | Area           | Topic                                                           | Resources                                                                                                                                                                                                 | Practices                                                                                                                                                                                                                                                                          |
 |----------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -149,20 +149,3 @@ This repository provides a comprehensive guide on leveraging Jupyter Notebooks f
 
 - Familiarity with Python programming language
 - Experience with Jupyter Notebooks
-
-## Getting Started
-
-1. **Clone the repository**: `git clone https://github.com/mshojaei77/NLP-Journey.git`
-2. **Install the required dependencies**: `pip install -r requirements.txt`
-3. **Open the Jupyter Notebook**: `jupyter notebook`
-4. **Navigate to the desired topic's notebook and start exploring!`
-
-## Contributing
-
-If you find any errors, have suggestions for improvements, or would like to contribute additional content, please feel free to submit a pull request or open an issue in the repository.
-
-## License
-
-This tutorial is licensed under the [MIT License](LICENSE).
-
-This revised table presents the topics in a more logical learning order, starting with foundational concepts and gradually progressing to more advanced topics. Remember to replace the placeholder links with actual URLs. Good luck with your NLP journey!

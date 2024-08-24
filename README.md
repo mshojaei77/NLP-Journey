@@ -40,8 +40,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 | Topic Modeling (LDA, NMF)                                 | [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html), [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf), [BigARTM](https://github.com/bigartm/bigartm) |  [] |
 | Information Retrieval (TF-IDF, BM25, Query Expansion, Vector Search, Semantic Search) | [Elasticsearch](https://www.elastic.co/), [Solr](https://lucene.apache.org/solr/), [Pinecone](https://www.pinecone.io/) |  [] |
 | Question Answering                                          | [DrQA](https://github.com/facebookresearch/DrQA), [Document-QA](https://github.com/allenai/document-qa)                              | []         |
-| Knowledge Extraction                                      | [Template-Based Information Extraction without the Templates](https://www.usna.edu/Users/cs/nchamber/pubs/acl2011-chambers-templates.pdf), 
-[Privee: An Architecture for Automatically Analyzing Web Privacy Policies](https://www.sebastianzimmeck.de/zimmeckAndBellovin2014Privee.pdf), [LEGALO](https://link.springer.com/chapter/10.1007/978-3-319-49001-4_16)  | []         |
+| Knowledge Extraction                                      | [Template-Based Information Extraction without the Templates](https://www.usna.edu/Users/cs/nchamber/pubs/acl2011-chambers-templates.pdf), [Privee: An Architecture for Automatically Analyzing Web Privacy Policies](https://www.sebastianzimmeck.de/zimmeckAndBellovin2014Privee.pdf), [LEGALO](https://link.springer.com/chapter/10.1007/978-3-319-49001-4_16)  | []       |
 
 #### NLP Applications
 

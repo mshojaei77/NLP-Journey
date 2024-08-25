@@ -42,24 +42,32 @@ In NLP, the primary focus is on written language because most computational proc
 
 For instance, the sentence "It's raining cats and dogs" when spoken might carry additional cues in tone and emphasis that could alter its interpretation. While these nuances are typically lost in transcription, they are crucial in understanding the full meaning and intent behind spoken language. Hence, in tasks involving speech recognition or conversational agents, attention to both phonetics and phonology becomes essential.
 
-### **Linguistic Text Units and Their Hierarchy**
+## **Linguistic Text Units and Their Hierarchy**
 
-Language can be broken down into various units, each analyzed at different linguistic levels. These units are organized hierarchically:
+Language can be analyzed at various levels, each comprising distinct units that contribute to our understanding of communication. These units are organized hierarchically:
 
-- **Morphological Level:** This includes the smallest units of meaning—characters, syllables, morphemes, and words. For example, in the word "unhappiness," the morphological breakdown would be:
-  - **Characters:** u, n, h, a, p, p, i, n, e, s, s
-  - **Syllables:** un-hap-pi-ness
-  - **Morphemes:** un-, happy, -ness
-  - **Words:** unhappiness
+### **1. Morphological Level**
+This level includes the smallest units of meaning, such as characters, syllables, morphemes, and words. For example, in the word "unhappiness," the morphological breakdown is as follows:
 
-- **Syntactic Level:** This level involves larger units such as phrases, clauses, and sentences. For example:
-  - **Phrases:** "The quick brown fox"
-  - **Clauses:** "The quick brown fox jumps over the lazy dog"
-  - **Sentences:** "The quick brown fox jumps over the lazy dog."
+- **Characters:** u, n, h, a, p, p, i, n, e, s, s
+- **Syllables:** `un-hap-pi-ness`
+- **Morphemes:** `un-`, `happy`, `-ness`
+- **Word:** `unhappiness`
 
-- **Discourse Level:** At this level, analysis involves paragraphs and larger discourse units, such as sections of a text or entire documents. Understanding how sentences and paragraphs link together to form a coherent text is crucial for tasks like summarization and topic modeling.
+### **2. Syntactic Level**
+At this level, we analyze larger units such as phrases, clauses, and sentences. For example:
 
-These levels are not isolated; rather, they interact with each other to form a cohesive understanding of language. For instance, understanding the morphology of a word helps in syntactic parsing, which in turn contributes to semantic interpretation.
+- **Phrases:** `The quick brown fox`
+- **Clauses:** A clause is a group of words containing a subject and a verb. For instance, `The quick brown fox jumps` is an independent clause because it can stand alone as a complete thought. On the other hand, `when the dog barks` is a dependent clause because it cannot form a complete sentence on its own.
+- **Sentence:** A sentence is a complete unit of meaning, typically containing a subject and a verb. It can be either a simple sentence with a single independent clause, like `The quick brown fox jumps,` or a compound sentence with multiple clauses, such as `The quick brown fox jumps, and the lazy dog barks.`
+
+### **3. Discourse Level**
+This level encompasses paragraphs and larger discourse units, including sections of a text or entire documents. For example, consider the following paragraph:
+`The quick brown fox jumps over the lazy dog. This action startled the dog, who quickly stood up and barked. The fox, however, was already on its way, darting into the nearby bushes. This encounter highlights the playful nature of the fox and the laid-back attitude of the dog.`
+In this example, the sentences work together to convey a coherent narrative about the interaction between the fox and the dog. Understanding how these sentences relate to each other and contribute to the overall theme is crucial for tasks such as summarization and topic modeling.
+
+### **Interconnectedness of Levels**
+These linguistic levels are not isolated; they interact with one another to create a comprehensive understanding of language. For instance, knowledge of a word's morphology aids in syntactic parsing, which subsequently contributes to semantic interpretation. This interconnectedness highlights the complexity and richness of language as a communicative tool.
 
 ### **Morphology: The Study of Word Structure**
 

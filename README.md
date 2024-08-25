@@ -1,15 +1,40 @@
-## NLP Journey - Roadmap to Learn LLMs from Scratch with Modern NLP Methods in 2024
+# Practical Guide to Learning Large Language Models (LLMs) with Modern NLP Methods in 2024
 
 This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond. We'll leverage Jupyter Notebooks for hands-on practice.
 
 **Table of Contents**
 
 * [Chapter 1: Foundations of NLP](#chapter-1-foundations-of-nlp)
+  * [1.1 Introduction to NLP](#11-introduction-to-nlp)
+  * [1.2 Text Preprocessing](#12-text-preprocessing)
+  * [1.3 Feature Engineering](#13-feature-engineering)
+  * [1.4 Word Embeddings](#14-word-embeddings)
 * [Chapter 2: Essential NLP Tasks](#chapter-2-essential-nlp-tasks)
+  * [2.1 Text Classification](#21-text-classification)
+  * [2.2 Sentiment Analysis](#22-sentiment-analysis)
+  * [2.3 Named Entity Recognition (NER)](#23-named-entity-recognition-ner)
+  * [2.4 Topic Modeling](#24-topic-modeling)
 * [Chapter 3: Deep Learning for NLP](#chapter-3-deep-learning-for-nlp)
+  * [3.1 Neural Network Fundamentals](#31-neural-network-fundamentals)
+  * [3.2 Deep Learning Frameworks](#32-deep-learning-frameworks)
+  * [3.3 Deep Learning Architectures for NLP](#33-deep-learning-architectures-for-nlp)
 * [Chapter 4: Large Language Models (LLMs)](#chapter-4-large-language-models-llms)
+  * [4.1 The Transformer Architecture](#41-the-transformer-architecture)
+  * [4.2 LLM Architectures](#42-llm-architectures)
+  * [4.3 LLM Training](#43-llm-training)
+  * [4.4 LLM Evaluation](#44-llm-evaluation)
+  * [4.5 LLM Deployment](#45-llm-deployment)
 * [Chapter 5: Multimodal Learning](#chapter-5-multimodal-learning)
+  * [5.1 Multimodal LLMs](#51-multimodal-llms)
+  * [5.2 Vision-Language Tasks](#52-vision-language-tasks)
+  * [5.3 Multimodal Applications](#53-multimodal-applications)
 * [Chapter 6: Deployment and Productionizing LLMs](#chapter-6-deployment-and-productionizing-llms)
+  * [6.1 Deployment Strategies](#61-deployment-strategies)
+  * [6.2 Inference Optimization](#62-inference-optimization)
+  * [6.3 Building with LLMs](#63-building-with-llms)
+  * [6.4 MLOps for LLMs](#64-mlops-for-llms)
+  * [6.5 LLM Security](#65-llm-security)
+
 ---
 
 # Chapter 1: Foundations of NLP
@@ -23,13 +48,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Discourse:** How language is used in conversation and text to convey meaning beyond individual sentences.
 * **Applications of NLP:** Provide a broad overview of how NLP is used in various domains.
 
+### Learning Resources
+
 | Resources | Description |
 |---|---|
 | [Understanding Natural Language Processing](https://dev.to/avinashvagh/understanding-the-concept-of-natural-language-processing-nlp-and-prompt-engineering-35hg) | A comprehensive overview of NLP, its history, techniques, and applications, including prompt engineering. |
 | [What is NLP?](https://www.secoda.co/glossary/what-is-nlp-natural-language-processing) | Detailed insights into NLP's workings, challenges, and its impact on technology interactions. |
-| [NLP Definition from TechTarget](https://www.techtarget.com/searchenterpriseai/definition/natural-language-processing-NLP) | An explanation of NLP's history, techniques, and its applications in various fields. |
-| [IBM's Overview of NLP](https://www.ibm.com/topics/natural-language-processing) | Discusses NLP's role in AI, its applications in business, and the importance of model selection. |
-| [Introduction to NLP by TextMine](https://textmine.com/post/an-introduction-to-natural-language-processing) | An introduction to NLP's key aspects and its applications across industries. |
 
 ## 1.2 Text Preprocessing
 
@@ -51,12 +75,16 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) | Explains stemming and lemmatization techniques. |
 | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) | Practical notebook for tokenization, lemmatization, and stemming. |
 | [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) | Video tutorial on building a tokenizer for GPT. |
-| [Tokenmonster GitHub Repository](https://github.com/tokenmonster) | A new tokenization method aimed at improving the performance of large language models by optimizing token representation. |
-| [WandB: An introduction to tokenization](https://wandb.ai/mostafaibrahim17/ml-articles/reports/An-introduction-to-tokenization-in-natural-language-processing--Vmlldzo3NTM4MzE5) | A guide exploring essential tokenization techniques and their applications in NLP. |
 | [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
 | [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
 | [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) | Detailed documentation on tokenization tools and libraries, emphasizing modern approaches in NLP. |
 | [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization) | Official guide on using spaCy for tokenization and other NLP tasks, highlighting its efficiency and capabilities. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Text Preprocessing Project** | A project to demonstrate various text preprocessing techniques such as tokenization, stemming, lemmatization, and stop word removal. | [GitHub Repository](#) |
 
 ## 1.3 Feature Engineering
 
@@ -71,6 +99,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [N-grams Made Simple & How To Implement In Python (NLTK) - Spot Intelligence](https://spotintelligence.com/n-grams-made-simple-how-to-implement-in-python-nltk/) | An easy-to-follow resource that explains N-grams, their significance in NLP, and how to implement them using Python's NLTK library. |
 | [NLP Basics: Tokens, N-Grams, and Bag-of-Words Models - Zilliz blog](https://zilliz.com/learn/introduction-to-natural-language-processing-tokens-ngrams-bag-of-words-models) | This blog post covers the fundamentals of NLP, including tokens, N-grams, and Bag-of-Words models, providing insights into their applications and limitations. |
 | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | Documentation on text feature extraction methods. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Feature Engineering Project** | A project to demonstrate feature engineering techniques such as Bag-of-Words, TF-IDF, and N-grams. | [GitHub Repository](#) |
 
 ## 1.4 Word Embeddings
 
@@ -87,6 +121,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html) | Overview of N-gram language models. |
 | [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) | Code examples for Word2Vec using Gensim. |
 | [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | Paper and resources on GloVe embeddings. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Word Embeddings Project** | A project to demonstrate various word embedding techniques such as Word2Vec, GloVe, FastText, ELMo, and BERT. | [GitHub Repository](#) |
 
 # Chapter 2: Essential NLP Tasks
 
@@ -108,6 +148,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) | Documentation on text classification with Hugging Face. |
 | [FastText](https://github.com/facebookresearch/fastText) | Code examples and resources for FastText. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Text Classification Project** | A project to demonstrate text classification using traditional and deep learning methods. | [GitHub Repository](#) |
+
 ## 2.2 Sentiment Analysis
 
 * **What is Sentiment Analysis?**
@@ -120,6 +166,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html) | Code examples for sentiment analysis using NLTK. |
 | [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) | Quickstart guide for sentiment analysis with TextBlob. |
 | [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) | Code and documentation for VADER sentiment analysis. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Sentiment Analysis Project** | A project to demonstrate sentiment analysis using lexicon-based, machine learning, and aspect-based approaches. | [GitHub Repository](#) |
 
 ## 2.3 Named Entity Recognition (NER)
 
@@ -135,6 +187,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities) | spaCy documentation on NER. |
 | [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) | Toolkit for information extraction, including NER. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Named Entity Recognition Project** | A project to demonstrate named entity recognition using rule-based and machine learning-based systems. | [GitHub Repository](#) |
+
 ## 2.4 Topic Modeling
 
 * **What is Topic Modeling?**
@@ -146,6 +204,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html) | Tutorial on topic modeling with Gensim. |
 | [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf) | Documentation on NMF with scikit-learn. |
 | [BigARTM](https://github.com/bigartm/bigartm) | Code and resources for advanced topic modeling. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Topic Modeling Project** | A project to demonstrate topic modeling using LDA and NMF. | [GitHub Repository](#) |
 
 # Chapter 3: Deep Learning for NLP
 
@@ -164,6 +228,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk) | Visual introduction to neural networks. |
 | [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c) | Comprehensive crash course on deep learning. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Neural Network Fundamentals Project** | A project to demonstrate the fundamentals of neural networks, including backpropagation and gradient descent. | [GitHub Repository](#) |
+
 ## 3.2 Deep Learning Frameworks
 
 * **PyTorch:**
@@ -179,6 +249,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [PyTorch Tutorials](https://pytorch.org/tutorials/) | Official PyTorch tutorials. |
 | [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) | Official TensorFlow tutorials. |
 | [JAX Documentation](https://jax.readthedocs.io/en/latest/) | Documentation for JAX. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Deep Learning Frameworks Project** | A project to demonstrate the use of deep learning frameworks such as PyTorch, TensorFlow, and JAX. | [GitHub Repository](#) |
 
 ## 3.3 Deep Learning Architectures for NLP
 
@@ -202,6 +278,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual explanation of the Transformer architecture. |
 | [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) | Overview of Transformer networks. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Deep Learning Architectures for NLP Project** | A project to demonstrate various deep learning architectures for NLP, including RNNs, CNNs, and Transformers. | [GitHub Repository](#) |
+
 # Chapter 4: Large Language Models (LLMs)
 
 ## 4.1 The Transformer Architecture
@@ -219,6 +301,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual introduction to the Transformer architecture. |
 | [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) | Visual explanation of GPT-2. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Transformer Architecture Project** | A project to demonstrate the Transformer architecture, including attention mechanisms and positional encodings. | [GitHub Repository](#) |
+
 ## 4.2 LLM Architectures
 
 * **Generative Pre-trained Transformer Models (GPT):** Autoregressive models, good at text generation.
@@ -229,6 +317,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | Resources | Description |
 |---|---|
 | [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) | Repository with papers and code on LLMs. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **LLM Architectures Project** | A project to demonstrate various LLM architectures, including GPT, BERT, T5, and BART. | [GitHub Repository](#) |
 
 ## 4.3 LLM Training
 
@@ -254,6 +348,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Distilabel](https://github.com/argilla-io/distilabel) | Code and resources for distillation and labeling. |
 | [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) | Introduction to RLHF for training LLMs. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **LLM Training Project** | A project to demonstrate various LLM training techniques, including pre-training, post-training, fine-tuning, and adapting LLMs. | [GitHub Repository](#) |
+
 ## 4.4 LLM Evaluation
 
 * **Evaluation Benchmarks:**
@@ -270,6 +370,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | Blog post on prompt engineering. |
 | [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) | Collection of papers on chain-of-thought prompting. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **LLM Evaluation Project** | A project to demonstrate various LLM evaluation techniques, including evaluation benchmarks, metrics, and prompt engineering. | [GitHub Repository](#) |
+
 ## 4.5 LLM Deployment
 
 * **Deployment Strategies:**
@@ -285,6 +391,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
 | [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **LLM Deployment Project** | A project to demonstrate various LLM deployment strategies, including local servers, cloud deployment, serverless functions, and edge deployment. | [GitHub Repository](#) |
+
 # Chapter 5: Multimodal Learning
 
 ## 5.1 Multimodal LLMs
@@ -299,6 +411,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [OpenAI CLIP](https://openai.com/research/clip) | Paper on CLIP model. |
 | [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) | Blog post on Vision Transformer. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Multimodal LLMs Project** | A project to demonstrate multimodal LLMs, including CLIP and ViT. | [GitHub Repository](#) |
+
 ## 5.2 Vision-Language Tasks
 
 * **Image Captioning:** Generating descriptions for images.
@@ -308,6 +426,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | Resources | Description |
 |---|---|
 | [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) | Documentation on vision-language tasks. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Vision-Language Tasks Project** | A project to demonstrate vision-language tasks, including image captioning, visual question answering, and visual reasoning. | [GitHub Repository](#) |
 
 ## 5.3 Multimodal Applications
 
@@ -322,6 +446,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Stability AI: Stable Diffusion](https://stability.ai/stable-image) | Model for text-to-image generation. |
 | [OpenAI DALL-E 2](https://openai.com/dall-e-2) | Model for text-to-image generation. |
 | [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) | Documentation on video understanding. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Multimodal Applications Project** | A project to demonstrate multimodal applications, including text-to-image generation, video understanding, and emerging trends. | [GitHub Repository](#) |
 
 # Chapter 6: Deployment and Productionizing LLMs
 
@@ -339,6 +469,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
 | [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Deployment Strategies Project** | A project to demonstrate various deployment strategies for LLMs, including local servers, cloud deployment, serverless functions, and edge deployment. | [GitHub Repository](#) |
+
 ## 6.2 Inference Optimization
 
 * **Quantization:** Reducing the precision of model weights and activations to reduce memory footprint and speed up inference.
@@ -351,6 +487,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 |---|---|
 | [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) | Blog tutorial on quantization. |
 | [Flash-Attention](https://github.com/Dao-AILab/flash-attention) | Code examples for Flash Attention. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Inference Optimization Project** | A project to demonstrate various inference optimization techniques, including quantization, flash attention, knowledge distillation, pruning, and speculative decoding. | [GitHub Repository](#) |
 
 ## 6.3 Building with LLMs
 
@@ -366,6 +508,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 | [Gradio](https://www.gradio.app/) | Framework for building web interfaces with LLMs. |
 | [Streamlit](https://docs.streamlit.io/) | Framework for building web applications with LLMs. |
 
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **Building with LLMs Project** | A project to demonstrate building applications with LLMs, including APIs, web frameworks, user interfaces, and chatbots. | [GitHub Repository](#) |
+
 ## 6.4 MLOps for LLMs
 
 * **CI/CD:** Continuous integration and continuous delivery pipelines for LLM development.
@@ -378,6 +526,12 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 |---|---|
 | [CometLLM](https://github.com/comet-ml/comet-llm) | Tool for experiment tracking and model management. |
 | [MLflow](https://mlflow.org/) | Open-source platform for the machine learning lifecycle. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **MLOps for LLMs Project** | A project to demonstrate MLOps for LLMs, including CI/CD, monitoring, model management, experiment tracking, and data and model pipelines. | [GitHub Repository](#) |
 
 ## 6.5 LLM Security
 
@@ -397,3 +551,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 |---|---|
 | [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | Guide on LLM security risks. |
 | [Prompt Injection Primer](https://github.com/jthack/PIPE) | Primer on prompt injection attacks. |
+
+### Practical Project
+
+| Project | Description | Codebase |
+|---|---|---|
+| **LLM Security Project** | A project to demonstrate LLM security, including prompt hacking, backdoors, and defensive measures. | [GitHub Repository](#) |

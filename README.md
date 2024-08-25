@@ -47,11 +47,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 ## 1.2 Text Preprocessing
 
-Text preprocessing is a crucial step in Natural Language Processing (NLP) that prepares raw text data for analysis and model training. This section outlines modern techniques and resources relevant to text preprocessing as of 2024.
-
 * **Tokenization:**
-    * **Word Tokenization:** Breaking text into individual words, which is essential for various NLP tasks.
-    * **Subword Tokenization:** Dividing words into smaller units (subwords) using methods like Byte Pair Encoding (BPE) and SentencePiece. This technique is particularly useful for handling out-of-vocabulary words and improving model performance.
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
 * **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.

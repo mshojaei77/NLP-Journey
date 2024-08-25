@@ -46,22 +46,19 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Semantics:** The meaning of words, phrases, and sentences.
     * **Pragmatics:** How context contributes to meaning in language.
     * **Discourse:** How language is used in conversation and text to convey meaning beyond individual sentences.
-* **Applications of NLP:** Provide a broad overview of how NLP is used in various domains.
+
 
 ### Learning Resources
 
 | Resources | Description |
 |---|---|
-| [Understanding Natural Language Processing](https://dev.to/avinashvagh/understanding-the-concept-of-natural-language-processing-nlp-and-prompt-engineering-35hg) | A comprehensive overview of NLP, its history, techniques, and applications, including prompt engineering. |
-| [What is NLP?](https://www.secoda.co/glossary/what-is-nlp-natural-language-processing) | Detailed insights into NLP's workings, challenges, and its impact on technology interactions. |
+| [Introduction to Natural Language Processing](https://krchowdhary.com/nlsp-lect/nlplect-8.pdf) | a lecture on the introduction to natural language processing (NLP), covering topics like characteristics of natural languages, levels of linguistic analysis, syntax, semantics, pragmatics, prosody, and computational linguistics. |
 
 ## 1.2 Text Preprocessing
 
 Text preprocessing is a crucial step in Natural Language Processing (NLP) that prepares raw text data for analysis and model training. This section outlines modern techniques and resources relevant to text preprocessing as of 2024.
 
-* **Tokenization:**
-    * **Word Tokenization:** Breaking text into individual words, which is essential for various NLP tasks.
-    * **Subword Tokenization:** Dividing words into smaller units (subwords) using methods like Byte Pair Encoding (BPE) and SentencePiece. This technique is particularly useful for handling out-of-vocabulary words and improving model performance.
+* **[Tokenization](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization.md):** Breaking text into individual words, which is essential for various NLP tasks.
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
 * **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
@@ -71,14 +68,13 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 
 | Resources | Description |
 |---|---|
-| [Neptune.ai: Tokenization in NLP](https://neptune.ai/blog/tokenization-in-nlp) | Comprehensive overview of tokenization types, challenges, and tools available in the NLP community. |
+| [Everything About Tokenization](https://github.com/SumanthRH/tokenization)
 | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) | Explains stemming and lemmatization techniques. |
 | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) | Practical notebook for tokenization, lemmatization, and stemming. |
 | [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) | Video tutorial on building a tokenizer for GPT. |
 | [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
 | [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
 | [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) | Detailed documentation on tokenization tools and libraries, emphasizing modern approaches in NLP. |
-| [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization) | Official guide on using spaCy for tokenization and other NLP tasks, highlighting its efficiency and capabilities. |
 
 ### Practical Project
 

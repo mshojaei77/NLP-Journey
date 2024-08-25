@@ -63,7 +63,9 @@ At this level, we analyze larger units such as phrases, clauses, and sentences. 
 
 ### **3. Discourse Level**
 This level encompasses paragraphs and larger discourse units, including sections of a text or entire documents. For example, consider the following paragraph:
+
 `The quick brown fox jumps over the lazy dog. This action startled the dog, who quickly stood up and barked. The fox, however, was already on its way, darting into the nearby bushes. This encounter highlights the playful nature of the fox and the laid-back attitude of the dog.`
+
 In this example, the sentences work together to convey a coherent narrative about the interaction between the fox and the dog. Understanding how these sentences relate to each other and contribute to the overall theme is crucial for tasks such as summarization and topic modeling.
 
 ### **Interconnectedness of Levels**
@@ -82,7 +84,7 @@ Understanding morphology is essential in NLP for tasks such as:
 - **Lemmatization:** Converting words to their base or dictionary form. For example, "ran" becomes "run."
 - **Morphological Parsing:** Breaking down complex words into their constituent morphemes to understand their meaning. For instance, "unhappiness" is parsed as "un-" + "happy" + "-ness," indicating a state of not being happy.
 
-In computational linguistics, morphological analysis is vital for handling languages with rich inflectional morphology, such as Finnish or Turkish, where a single word can convey a wealth of grammatical information.
+In computational linguistics, morphological analysis is vital for handling languages with rich inflectional morphology, such as **Persian** or **Turkish**, where a single word can convey a wealth of grammatical information.
 
 ### **Syntax: The Structure of Sentences**
 

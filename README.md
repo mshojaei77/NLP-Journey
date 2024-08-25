@@ -1,207 +1,445 @@
-# 🚀 NLP Journey - Roadmap to Learn LLMs from Scratch with Modern NLP Methods in 2024 
+## NLP Journey - Roadmap to Learn LLMs from Scratch with Modern NLP Methods in 2024
 
-Welcome! This repository is your comprehensive guide 🗺️ to mastering Natural Language Processing (NLP), from the fundamentals all the way to understanding and applying Large Language Models (LLMs). Whether you're a beginner or have some NLP experience, this roadmap will equip you with the practical skills needed for NLP and LLM-related roles in 2024 and beyond. We'll be using Jupyter Notebooks 📓 for hands-on practice along the way.
+This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond.  We'll leverage Jupyter Notebooks for hands-on practice.
 
-##  📚 Chapter 1: Foundations of NLP
+**Table of Contents**
 
-Let's start by building a strong foundation in core NLP concepts:
+* [Chapter 1: Foundations of NLP](#chapter-1-foundations-of-nlp)
+    * [1.1 Introduction to NLP](#11-introduction-to-nlp)
+    * [1.2 Text Preprocessing](#12-text-preprocessing)
+    * [1.3 Feature Engineering](#13-feature-engineering)
+    * [1.4 Word Embeddings](#14-word-embeddings)
+* [Chapter 2: Essential NLP Tasks](#chapter-2-essential-nlp-tasks)
+    * [2.1 Text Classification](#21-text-classification)
+    * [2.2 Sentiment Analysis](#22-sentiment-analysis)
+    * [2.3 Named Entity Recognition (NER)](#23-named-entity-recognition-ner)
+    * [2.4 Topic Modeling](#24-topic-modeling)
+* [Chapter 3: Deep Learning for NLP](#chapter-3-deep-learning-for-nlp)
+    * [3.1 Neural Network Fundamentals](#31-neural-network-fundamentals)
+    * [3.2 Deep Learning Frameworks](#32-deep-learning-frameworks)
+    * [3.3 Deep Learning Architectures for NLP](#33-deep-learning-architectures-for-nlp)
+* [Chapter 4: Large Language Models (LLMs)](#chapter-4-large-language-models-llms)
+    * [4.1 The Transformer Architecture](#41-the-transformer-architecture)
+    * [4.2 LLM Architectures](#42-llm-architectures)
+    * [4.3 LLM Pre-training](#43-llm-pre-training) 
+    * [4.4 LLM Post-training](#44-llm-post-training)
+    * [4.5 Fine-tuning LLMs](#45-fine-tuning--adapting-llms)
+    * [4.6 Adapting LLMs](#46-adapting-llms)
+    * [4.7 Scaling LLMs: Efficiency](#47-scaling-llms-efficiency)
+    * [4.8 Scaling LLMs: Sparsity](#48-scaling-llms-sparsity) 
+* [Chapter 5: LLM Evaluation](#chapter-5-llm-evaluation)
+    * [5.1 LLM Evaluation Benchmarks](#51-llm-evaluation-benchmarks)
+    * [5.2 LLM Evaluation Metrics](#52-llm-evaluation-metrics)
+    * [5.3 Prompt Engineering](#53-prompt-engineering)
+    * [5.4 Retrieval Augmented Generation (RAG)](#54-retrieval-augmented-generation-rag)
+* [Chapter 6: Multimodal Learning](#chapter-6-multimodal-learning)
+    * [6.1 Multimodal LLMs](#61-multimodal-llms)
+    * [6.2 Vision-Language Tasks](#62-vision-language-tasks)
+    * [6.3 Multimodal Applications](#63-multimodal-applications)
+* [Chapter 7: Deployment and Productionizing LLMs](#chapter-7-deployment-and-productionizing-llms)
+    * [7.1 Deployment Strategies](#71-deployment-strategies)
+    * [7.2 Inference Optimization](#72-inference-optimization)
+    * [7.3 Building with LLMs](#73-building-with-llms)
+    * [7.4 MLOps for LLMs](#74-mlops-for-llms)
+    * [7.5 LLM Security](#75-llm-security) 
 
-**🌟 Core NLP Concepts**
+---
 
-| Topic                                       | Resources                                           | 
-|---------------------------------------------|------------------------------------------------------|
-| Introduction to NLP: Syntax, Semantics, Pragmatics, Discourse                      | [What is Natural Language Processing (NLP)?](https://www.datacamp.com/blog/what-is-natural-language-processing) | 
+# Chapter 1: Foundations of NLP
 
-**⚙️ Text Preprocessing & Feature Engineering** 
+## 1.1 Introduction to NLP
 
-| Topic                                                    | Resources                                                                                   | Practices |
-|----------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------|
-| Tokenization (Word, Subword - BPE, SentencePiece)        |[Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index) <br> [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) <br> [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s)|<a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journe"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>      |
-| Stemming & Lemmatization                                | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) <br> [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html)                         | []         |
-| Stop Word Removal, Punctuation Handling                 | [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus)                         | []         |
-| Bag-of-Words (BoW), TF-IDF, N-grams                      | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | []         |
+* **What is NLP?**  Explain the core concepts of Natural Language Processing, including:
+    * **Syntax:** The arrangement of words and phrases to create well-formed sentences.
+    * **Semantics:** The meaning of words, phrases, and sentences.
+    * **Pragmatics:** How context contributes to meaning in language.
+    * **Discourse:** How language is used in conversation and text to convey meaning beyond individual sentences.
+* **Applications of NLP:**  Provide a broad overview of how NLP is used in various domains.
 
-**🌐 Word Embeddings**
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [What is Natural Language Processing (NLP)?](https://www.datacamp.com/blog/what-is-natural-language-processing) |
 
-| Topic                                                            | Resources                                                                                      | Practices |
-|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-----------|
-| Word2Vec, GloVe, FastText                                     | [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/) <br> [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) <br> [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | []         |
-| Contextual Embeddings (ELMo, BERT)                            |  [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html)                  | []         |
+## 1.2 Text Preprocessing 
 
+* **Tokenization:**
+    * **Word Tokenization:** Breaking text into individual words.
+    * **Subword Tokenization:** Breaking words into smaller units (subwords), like Byte Pair Encoding (BPE) and SentencePiece. This helps handle out-of-vocabulary words.
+* **Stemming:** Reducing words to their base or root form (e.g., "running" -> "run").
+* **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" -> "good").
+* **Stop Word Removal:** Removing common words that carry less meaning (e.g., "the", "a", "is").
+* **Punctuation Handling:** Removing or standardizing punctuation.
 
-## 🤖 Chapter 2: Essential NLP Tasks & Algorithms
+| Category | Resources |
+|---|---|
+| Video Tutorials | [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) |
+| Notebooks | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) |
+| Docs | [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index), [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus) |
+| Blog Tutorials | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) |
+| Code Examples | [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html) | 
 
-Now, let's dive into common NLP tasks and the algorithms that power them:
+## 1.3 Feature Engineering
 
-| Topic                                                    | Resources                                                                                          | Practices |
-|----------------------------------------------------------|----------------------------------------------------------------------------------------------------|-----------|
-| Text Classification (Naive Bayes, SVM, Logistic Regression, Deep Learning) | [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html) <br> [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) <br> [FastText](https://github.com/facebookresearch/fastText) |  [] |
-| Sentiment Analysis (Lexicon-Based, Machine Learning, Aspect-Based) | [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html) <br> [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) <br> [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) |  [] |
-| Named Entity Recognition (NER) (NLTK, spaCy, Transformers) | [NLTK NER](https://www.nltk.org/book/ch07.html) <br> [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities) <br> [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification) <br> [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) |  [] |
-| Text Clustering (K-Means, Hierarchical Clustering, DBSCAN, OPTICS) | [Scikit-learn Clustering](https://scikit-learn.org/stable/modules/clustering.html)                   |  [] |
-| Topic Modeling (LDA, NMF)                                 | [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html) <br> [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf) <br> [BigARTM](https://github.com/bigartm/bigartm) |  [] |
-| Information Retrieval (TF-IDF, BM25, Query Expansion, Vector Search, Semantic Search) | [Elasticsearch](https://www.elastic.co/) <br> [Solr](https://lucene.apache.org/solr/) <br> [Pinecone](https://www.pinecone.io/) |  [] |
-| Question Answering                                          | [DrQA](https://github.com/facebookresearch/DrQA) <br> [Document-QA](https://github.com/allenai/document-qa)                              | []         |
-| Knowledge Extraction                                      | [Template-Based Information Extraction without the Templates](https://www.usna.edu/Users/cs/nchamber/pubs/acl2011-chambers-templates.pdf) <br> [Privee: An Architecture for Automatically Analyzing Web Privacy Policies](https://www.sebastianzimmeck.de/zimmeckAndBellovin2014Privee.pdf) <br> [LEGALO](https://link.springer.com/chapter/10.1007/978-3-319-49001-4_16)  | []       |
+* **Bag-of-Words (BoW):** Representing text as a collection of word frequencies.
+* **TF-IDF:** A statistical measure that reflects how important a word is to a document in a collection.
+* **N-grams:** Sequences of N consecutive words or characters.
 
+| Category | Resources |
+|---|---|
+| Docs | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | 
 
-**🚀 NLP Applications** 
+## 1.4 Word Embeddings
 
-Let's explore how these tasks translate into real-world NLP applications:
+* **Word2Vec:** Learns vector representations of words based on their co-occurrence patterns in text.
+* **GloVe:** Learns global vector representations of words by factoring a word-context co-occurrence matrix.
+* **FastText:**  An extension of Word2Vec that considers subword information, improving representations for rare words.
+* **Contextual Embeddings:**
+    * **ELMo:** Learns contextualized word representations by considering the entire sentence.
+    * **BERT:**  Uses a bidirectional transformer to generate deep contextualized word embeddings.
 
-| Topic            | Resources                                                              | Practices |
-|-----------------|--------------------------------------------------------------------------|-----------|
-| Dialogue Systems | [Chat script](https://github.com/bwilcox-1234/ChatScript) <br> [Chatter bot](http://chatterbot.readthedocs.io/en/stable/#) <br> [RiveScript](https://www.rivescript.com/about) <br> [SuperScript](http://superscriptjs.com/) <br> [BotKit](https://github.com/howdyai/botkit) | []         | 
-| Machine Translation | [Berkeley Aligner](https://code.google.com/p/berkeleyaligner/) <br> [cdec](https://github.com/redpony/cdec) <br> [Jane](http://www-i6.informatik.rwth-aachen.de/jane/) <br> [Joshua](http://joshua-decoder.org/) <br> [Moses](http://www.statmt.org/moses/) <br> [alignment-with-openfst](https://github.com/ldmt-muri/alignment-with-openfst) <br> [zmert](http://cs.jhu.edu/~ozaidan/zmert/)  | [] |
-| Text Summarization | [IndoSum](https://github.com/kata-ai/indosum) <br> [Cohere Summarize Beta](https://txt.cohere.ai/summarize-beta/) | [] |
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/), [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html)  |
+| Code Examples | [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) |
+| Papers | [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | 
 
+# Chapter 2: Essential NLP Tasks 
 
-##  🧠 Chapter 3: Deep Learning for NLP
+## 2.1 Text Classification
 
-Time to unleash the power of deep learning for NLP tasks:
+* **What is Text Classification?**
+* **Traditional Methods:**
+    * Naive Bayes
+    * SVM 
+    * Logistic Regression
+* **Deep Learning Methods:**
+    * Recurrent Neural Networks (RNNs)
+    * Convolutional Neural Networks (CNNs)
+    * Transformers
 
-**🧠 Neural Network Fundamentals**
+| Category | Resources |
+|---|---|
+| Tutorials | [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html) |
+| Docs | [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) | 
+| Code Examples | [FastText](https://github.com/facebookresearch/fastText) | 
 
-| Topic                              | Resources                                                                                                                                            | Practices |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Neural Network Basics, Backpropagation | [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk) <br> [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c) |  [] |
-| Perceptron                        | [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk)                                                                         |  [] |
+## 2.2 Sentiment Analysis
 
-**🛠️ Deep Learning Frameworks**
+* **What is Sentiment Analysis?**
+* **Lexicon-Based Approach:** Analyzing text for positive and negative words.
+* **Machine Learning Approach:** Training models on labeled data to predict sentiment.
+* **Aspect-Based Sentiment Analysis:** Identifying sentiment towards specific aspects of an entity.
 
-| Topic                         | Resources                                                                                    | Practices |
-|---------------------------------|---------------------------------------------------------------------------------------------|-----------|
-| PyTorch, JAX, TensorFlow       | [PyTorch Tutorials](https://pytorch.org/tutorials/) <br> [JAX Documentation](https://jax.readthedocs.io/en/latest/) <br> [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) <br> [Caffe](http://arxiv.org/pdf/1409.3215v1.pdf) |  [] |
-| MxNet, Numpy                  | [MxNet + Numpy]( https://github.com/dmlc/minpy)                                                 | []         |
+| Category | Resources |
+|---|---|
+| Code Examples | [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html), [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis), [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) | 
 
-**⚙️ Deep Learning Architectures for NLP**
+## 2.3 Named Entity Recognition (NER)
 
-| Topic                                                       | Resources                                                                                                                                                                          | Practices |
-|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Recurrent Neural Networks (RNNs) (Sequence Modeling, LSTMs, GRUs, Attention) | [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) <br> [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) <br> [Bayesian Recurrent Neural Network for Language Modeling](http://chien.cm.nctu.edu.tw/bayesian-recurrent-neural-network-for-language-modeling/) <br> [RNNLM](http://www.fit.vutbr.cz/~imikolov/rnnlm/) <br>  [KALDI LSTM](https://github.com/dophist/kaldi-lstm) |  [] |
-| Convolutional Neural Networks (CNNs) for Text  (Classification, Hierarchical CNNs) | [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/) <br> [Kim Yoon: Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) |  [] |
-| Sequence-to-Sequence Models (Attention, Transformers, T5, BART) | [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) <br> [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) <br> [Hugging Face: T5](https://huggingface.co/docs/transformers/model_doc/t5) <br> [Hugging Face: BART](https://huggingface.co/docs/transformers/model_doc/bart) |  [] |
+* **What is NER?**
+* **Rule-Based Systems:** Using patterns and rules to identify entities.
+* **Machine Learning-Based Systems:** Training models to recognize entities.
+* **Popular Tools:** NLTK, spaCy, Transformers
 
-
-##  🚀 Chapter 4: Large Language Models (LLMs)
-
-This chapter delves into the exciting world of LLMs:
-
-**🤖 The Transformer Architecture**
-
-| Topic                                                            | Resources                                                                                                         | Practices |
-|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------|
-| Attention, Residual Connections, Layer Normalization, RoPE        | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) <br> [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) <br> [Visual Intro to Transformers](https://www.youtube.com/watch?v=wjZofJX0v4M&t=187s) <br> [LLM Visualization](https://bbycroft.net/llm) <br> [nanoGPT](https://www.youtube.com/watch?v=kCc8FmEb1nY) <br> [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/) |  [] |
-
-**🏗️ LLM Architectures, Pre-training, & Post-training**
-
-| Topic                                                                       | Resources                                                                                                                                                                                                                    | Practices |
-|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| GPT, BERT, T5, Llama, PaLM, Phi-3                                         | [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) <br> [Hugging Face: Causal Language Modeling](https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt) <br> [TinyLlama](https://github.com/jzhang38/TinyLlama) <br> [Chinchilla's Wild Implications](www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications) <br> [BLOOM](https://bigscience.notion.site/BLOOM-BigScience-176B-Model-ad073ca07cdf479398d5f95d88e218c4) <br> [OPT-175 Logbook](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/chronicles/OPT175B_Logbook.pdf) <br> [LLM 360](https://www.llm360.ai/) <br> [New LLM Pre-training and Post-training Paradigms](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training) <br> [Phi-3CookBook](https://github.com/microsoft/Phi-3CookBook) <br> [Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling](https://arxiv.org/abs/2304.01373) <br> [LLM Reading List](https://github.com/crazyofapple/Reading_groups/) <br>  [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752) <br> [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://arxiv.org/abs/2405.04434) <br>  [Jamba: A Hybrid Transformer-Mamba Language Model](https://arxiv.org/pdf/2403.19887) <br> [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](https://arxiv.org/abs/2405.21060) <br> [The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783) |  [] |
-| Emerging Architectures (DeepSeek-v2, Jamba, Mixture of Experts - MoE) | [DeepSeek-v2](https://arxiv.org/abs/2405.04434) <br> [Jamba](https://arxiv.org/abs/2403.19887) <br> [Hugging Face: Mixture of Experts Explained](https://huggingface.co/blog/moe) <br> [Create MoEs with MergeKit Notebook](https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing)  <br> [GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://arxiv.org/pdf/2112.06905.pdf) <br> [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961.pdf) |  [] |
-
-**🔧 Fine-tuning & Adapting LLMs** 
-
-Learn to customize LLMs for your specific needs:
-
-| Topic                                                                    | Resources                                                                                                                                                                                               | Practices |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Supervised Fine-Tuning (SFT)                                             | [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) <br> [Padding Large Language Models](https://towardsdatascience.com/padding-large-language-models-examples-with-llama-2-199fb10df8ff) <br> [A Beginner's Guide to LLM Fine-Tuning](https://mlabonne.github.io/blog/posts/A_Beginners_Guide_to_LLM_Finetuning.html) <br> [unslothai](https://github.com/unslothai/unsloth) <br> [Fine-tune Llama 2 with QLoRA Notebook](https://colab.research.google.com/drive/1PEQyJO1-f6j0S_XJ8DV50NkpzasXkrzd?usp=sharing) <br> [Fine-tune CodeLlama using Axolotl Notebook](https://colab.research.google.com/drive/1Xu0BrCB7IShwSWKVcfAfhehwjDrDMH5m?usp=sharing) <br> [Fine-tune Mistral-7b with QLoRA Notebook](https://colab.research.google.com/drive/1o_w0KastmEJNVwT5GoqMCciH-18ca5WS?usp=sharing) <br> [Fine-tune Mistral-7b with DPO Notebook](https://colab.research.google.com/drive/15iFBr1xWgztXvhrj5I9fBv20c7CFOPBE?usp=sharing) <br> [Fine-tune Llama 3 with ORPO Notebook](https://colab.research.google.com/drive/1eHNWg9gnaXErdAa8_mcvjMupbSS6rDvi) <br> [Fine-tune Llama 3.1 with Unsloth Notebook](https://colab.research.google.com/drive/164cg_O7SV7G8kZr_JXqLd6VC7pd86-1Z?usp=sharing) <br> [flux-finetune](https://github.com/gradient-ai/flux-finetune) <br> [torchtune](https://github.com/pytorch/torchtune) <br> [Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf) | []         |
-| Parameter-Efficient Fine-tuning (PEFT) (LoRA, Adapters, Prompt Tuning)  | [LoRA Insights](https://lightning.ai/pages/community/lora-insights/) <br> [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft) <br> [FLAN](https://openreview.net/forum?id=gEZrGCozdqR) <br> [T0](https://arxiv.org/abs/2110.08207)                                                 |  [] |
-| Reinforcement Learning from Human Feedback (RLHF) (PPO, DPO)              | [Distilabel](https://github.com/argilla-io/distilabel) <br> [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) <br> [Hugging Face: Illustration RLHF](https://huggingface.co/blog/rlhf) <br> [Hugging Face: Preference Tuning LLMs](https://huggingface.co/blog/pref-tuning) <br> [LLM Training: RLHF and Its Alternatives](https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives) <br> [Fine-tune Mistral-7b with DPO](https://mlabonne.github.io/blog/posts/Fine_tune_Mistral_7b_with_DPO.html) <br> [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/pdf/2305.18290.pdf) <br> [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155.pdf) <br> [WebGPT: Browser-assisted question-answering with human feedback](https://www.semanticscholar.org/paper/WebGPT%3A-Browser-assisted-question-answering-with-Nakano-Hilton/2f3efe44083af91cef562c1a3451eee2f8601d22) <br> [Improving alignment of dialogue agents via targeted human judgements](https://arxiv.org/pdf/2209.14375.pdf) <br> [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017) |  [] |
-| Model Merging (SLERP, DARE/TIES, FrankenMoEs)                              | [Merge LLMs with mergekit](https://mlabonne.github.io/blog/posts/2024-01-08_Merge_LLMs_with_mergekit.html) <br> [DARE/TIES](https://arxiv.org/abs/2311.03099) <br> [Phixtral](https://huggingface.com/mlabonne/phixtral-2x2_8) <br> [MergeKit](https://github.com/cg123/mergekit) <br> [Merge LLMs with MergeKit Notebook](https://colab.research.google.com/drive/1_JS7JKJAQozD48-LhYdegcuuZ2ddgXfr?usp=sharing) <br> [LazyMergekit Notebook](https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing)  |  [] |
-
-**📊 LLM Evaluation** 
-
-How do we know if an LLM is performing well?
-
-| Topic                      | Resources                                                                                                                                            | Practices |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| LLM Evaluation Benchmarks & Tools | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) <br> [MixEval](https://github.com/Psycoy/MixEval) <br> [lighteval](https://github.com/huggingface/lighteval) <br> [OLMO-eval](https://github.com/allenai/OLMo-Eval) <br> [instruct-eval](https://github.com/declare-lab/instruct-eval) <br> [simple-evals](https://github.com/openai/simple-evals) <br> [Giskard](https://github.com/Giskard-AI/giskard) <br> [LangSmith](https://www.langchain.com/langsmith)  <br>  [Ragas](https://github.com/explodinggradients/ragas) <br> [Chatbot Arena Leaderboard](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard) <br> [MixEval Leaderboard](https://mixeval.github.io/#leaderboard) <br> [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) <br> [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) <br> [OpenCompass 2.0 LLM Leaderboard](https://rank.opencompass.org.cn/leaderboard-llm-v2) <br> [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) <br> [HELM](https://arxiv.org/pdf/2211.09110.pdf) <br> [BIG-bench](https://github.com/google/BIG-bench) | []         |
-
-**🗣️ Prompt Engineering**
-
-The art of crafting effective prompts for LLMs:
-
-| Topic                                                    | Resources                                                                                                                                       | Practices |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Prompt Engineering Techniques (Zero-Shot, Few-Shot, Chain-of-Thought, ReAct)  | [Prompt Engineering Guide](https://www.promptingguide.ai/) <br> [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) <br> [LLM Prompt Engineering Simplified Book](https://llmnanban.akmmusai.pro/Book/LLM-Prompt-Engineering-Simplified-Book/) <br> [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) <br> [Awesome Deliberative Prompting](https://github.com/logikon-ai/awesome-deliberative-prompting) <br> [Instruction-Tuning-Papers](https://github.com/SinclairCoder/Instruction-Tuning-Papers)  <br>  [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/pdf/2305.10601.pdf) <br> [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) <br> [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)   |  [] |
-| Task-Specific Prompting (e.g., Code Generation)         | [Code Generation with AlphaCodium: From Prompt Engineering to Flow Engineering](https://arxiv.org/abs/2401.08500) <br> [Codex](https://arxiv.org/pdf/2107.03374.pdf)                                |  [] |
-| Structuring LLM Outputs (Templates, JSON, LMQL, Outlines, Guidance) | [Chat Template](https://huggingface.co/blog/chat-templates) <br> [Outlines - Quickstart](https://outlines-dev.github.io/outlines/quickstart/) <br> [LMQL - Overview](https://lmql.ai/docs/language/overview.html) <br> [Microsoft Guidance](https://github.com/microsoft/guidance) <br> [Guidance](https://github.com/microsoft/guidance) <br> [Outlines](https://github.com/normal-computing/outlines) |  [] |
-
-**🗃️ Retrieval Augmented Generation (RAG)**
-
-| Topic                                                    | Resources                                                                                                                      | Practices |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------|
-|   Document Loaders, Text Splitters                  | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/) <br> [LlamaIndex Data Connectors](https://gpt-index.readthedocs.io/en/latest/guides/primer/data_connectors.html) |  [] |
-|   Embedding Models                                    | [Sentence Transformers Library](https://www.sbert.net/) <br> [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) <br> [InferSent](https://github.com/facebookresearch/InferSent)          |  [] |
-|   Vector Databases (Chroma, Pinecone, Milvus, FAISS, Annoy) | [Chroma](https://www.trychroma.com/) <br> [Pinecone](https://www.pinecone.io/) <br> [Milvus](https://milvus.io/) <br> [FAISS](https://faiss.ai/) <br> [Annoy](https://github.com/spotify/annoy)  |  [] |
-|   Orchestrators (LangChain, LlamaIndex, FastRAG)       | [LangChain](https://python.langchain.com/) <br> [LlamaIndex](https://docs.llamaindex.ai/en/stable/) <br> [FastRAG](https://github.com/IntelLabs/fastRAG) <br> [🦜🔗 Awesome LangChain](https://github.com/kyrolabs/awesome-langchain) |  [] |
-|   Query Expansion, Re-ranking, HyDE                    | [HyDE](https://arxiv.org/abs/2212.10496) <br> [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers/)                              |  [] |
-|   RAG Fusion                                           | [RAG-fusion](https://github.com/Raudaschl/rag-fusion)                                                                         |  [] |
-|   Evaluation (Context Precision/Recall, Faithfulness, Relevancy, Ragas, DeepEval) | [Ragas](https://github.com/explodinggradients/ragas/tree/main) <br> [DeepEval](https://github.com/confident-ai/deepeval)                |  [] |
-|   Query Construction (SQL, Cypher)                     | [LangChain Query Construction](https://blog.langchain.dev/query-construction/) <br> [LangChain SQL](https://python.langchain.com/docs/use_cases/qa_structured/sql) |  [] |
-|   Agents & Tools (Google Search, Wikipedia, Python, Jira) | [LangChain Agents](https://python.langchain.com/docs/modules/agents/)                                                                |  [] |
-|   Programmatic LLMs (DSPy)                           | [DSPy](https://github.com/stanfordnlp/dspy) <br> [dspy](https://github.com/stanfordnlp/dspy)                                                                                    |  [] |
+| Category | Resources |
+|---|---|
+| Docs | [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification) |
+| Code Examples | [NLTK NER](https://www.nltk.org/book/ch07.html), [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities),  [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) | 
 
 
-## 🎨 Chapter 5: Multimodal Learning & Applications
+## 2.4 Topic Modeling
 
-Go beyond text and explore the world of multimodal LLMs:
+* **What is Topic Modeling?**
+* **Latent Dirichlet Allocation (LDA):** A probabilistic model for discovering latent topics in a collection of documents.
+* **Non-Negative Matrix Factorization (NMF):** A linear algebra technique for topic modeling.
 
-| Topic                                                    | Resources                                                                                                                    | Practices |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Multimodal LLMs (CLIP, ViT, LLaVA, MiniCPM-V, GPT-SoVITS)                       | [OpenAI CLIP](https://openai.com/research/clip) <br> [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) <br> [LLaVA](https://llava-vl.github.io/) <br> [MiniCPM-V 2.6](https://github.com/OpenBMB/MiniCPM-V) <br> [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)  |  [] |
-| Vision-Language Tasks (Image Captioning, VQA, Visual Reasoning) | [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) <br> [Microsoft Kosmos-1](https://arxiv.org/abs/2302.14045) <br> [Google PaLM-E](https://palm-e.github.io/) <br> [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)                      |  [] |
-| Text-to-Image Generation, Video Understanding           | [Stability AI: Stable Diffusion](https://stability.ai/stable-image) <br> [OpenAI DALL-E 2](https://openai.com/dall-e-2) <br> [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) <br> [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)  |  [] |
-| Emerging Trends (Neuro-Symbolic AI, LLMs for Robotics)  |                                                                                                                                 | []         |
+| Category | Resources |
+|---|---|
+| Code Examples | [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html), [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf), [BigARTM](https://github.com/bigartm/bigartm) | 
 
-## 💻 Chapter 6: Deployment & Productionizing LLMs
+# Chapter 3: Deep Learning for NLP
 
-Learn how to take your LLM models from experimentation to the real world:
+## 3.1 Neural Network Fundamentals
 
-**🚀 Deployment Strategies**
+* **Neural Network Basics:** 
+    * Architecture of a neural network (layers, neurons, weights, biases).
+    * Activation functions (sigmoid, ReLU, tanh).
+* **Backpropagation:** The algorithm for training neural networks.
+* **Gradient Descent:** Optimizing the weights of a neural network.
+* **Vanishing Gradients:** Challenges in training deep neural networks for NLP.
+* **Exploding Gradients:** Challenges in training deep neural networks for NLP.
 
-| Topic                                                             | Resources                                                                                                                                            | Practices |
-|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Local Servers (LM Studio, Ollama, Oobabooga, Kobold.cpp)          | [LM Studio](https://lmstudio.ai/) <br> [Ollama](https://ollama.ai/) <br> [oobabooga](https://github.com/oobabooga/text-generation-webui) <br> [kobold.cpp](https://github.com/LostRuins/koboldcpp) <br> [llama.cpp](https://github.com/ggerganov/llama.cpp) <br> [mistral.rs](https://github.com/EricLBuehler/mistral.rs) <br> [Serge](https://github.com/serge-chat/serge) |  [] |
-| Cloud Deployment (AWS, GCP, Azure, SkyPilot, Specialized Hardware (TPUs)) | [SkyPilot](https://github.com/skypilot-org/skypilot) <br> [Hugging Face Inference API](https://huggingface.co/inference-api) <br> [Together AI](https://www.together.ai/) <br> [Modal](https://modal.com/docs/guide/ex/potus_speech_qanda) <br> [Metal](https://getmetal.io/)           |  [] |
-| Serverless Functions, Edge Deployment (MLC LLM, mnn-llm)          | [AWS Lambda](https://aws.amazon.com/lambda/) <br> [Google Cloud Functions](https://cloud.google.com/functions) <br> [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) <br> [MLC LLM](https://github.com/mlc-ai/mlc-llm) <br> [mnn-llm](https://github.com/wangzhaode/mnn-llm/blob/master/README_en.md)  |  [] |
-| LLM Serving                                                        | [LitServe](https://github.com/Lightning-AI/LitServe) <br> [vLLM](https://github.com/vllm-project/vllm) <br> [TGI](https://huggingface.co/docs/text-generation-inference/en/index) <br> [FastChat](https://github.com/lm-sys/FastChat) <br> [Jina](https://github.com/jina-ai/langchain-serve) <br> [LangServe](https://github.com/langchain-ai/langserve)                                             |           |
+| Category | Resources |
+|---|---|
+| Video Tutorials | [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk), [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c)  |
 
-** Inference Optimization**
+## 3.2 Deep Learning Frameworks
 
-| Topic                                              | Resources                                                                                                                                                                                                                  | Practices |
-|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Quantization (GPTQ, EXL2, GGUF, llama.cpp, exllama)          | [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) <br> [Quantization with GGUF and llama.cpp Notebook](https://colab.research.google.com/drive/1pL8k7m04mgE5jo2NrjGi8atB0j_37aDD?usp=sharing) <br> [4-bit LLM Quantization with GPTQ](https://mlabonne.github.io/blog/posts/4_bit_Quantization_with_GPTQ.html) <br> [4-bit Quantization using GPTQ Notebook](https://colab.research.google.com/drive/1lSvVDaRgqQp_mWK_jC9gydz6_-y6Aq4A?usp=sharing) <br> [ExLlamaV2: The Fastest Library to Run LLMs](https://mlabonne.github.io/blog/posts/ExLlamaV2_The_Fastest_Library_to_Run%C2%A0LLMs.html) <br> [ExLlamaV2 Notebook](https://colab.research.google.com/drive/1yrq4XBlxiA0fALtMoT2dwiACVc77PHou?usp=sharing) <br> [AutoQuant Notebook](https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4?usp=sharing) <br> [exllama](https://github.com/turboderp/exllama) | []         |
-| Flash Attention, Key-Value Cache (MQA, GQA)        | [Flash-Attention](https://github.com/Dao-AILab/flash-attention) <br> [Multi-Query Attention](https://arxiv.org/abs/1911.02150) <br> [Grouped-Query Attention](https://arxiv.org/abs/2305.13245)      |  [] |
-| Knowledge Distillation, Pruning                    | [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) <br> [To prune, or not to prune: exploring the efficacy of pruning for model compression](https://arxiv.org/abs/1710.01878) |  [] |
-| Speculative Decoding                               | [Hugging Face: Assisted Generation](https://huggingface.co/blog/assisted-generation)                                                                                                     |  [] |
+* **PyTorch:** 
+* **TensorFlow:**
+* **JAX:**
+* **Considerations for Choosing a Framework:**  
+    * Ease of use
+    * Community Support
+    * Computational efficiency
 
-** Building with LLMs**
+| Category | Resources |
+|---|---|
+| Tutorials | [PyTorch Tutorials](https://pytorch.org/tutorials/), [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) | 
+| Docs | [JAX Documentation](https://jax.readthedocs.io/en/latest/) |
 
-| Topic                                                     | Resources                                                                                                                                             | Practices |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| APIs (OpenAI, Google, Anthropic, Cohere, OpenRouter, Hugging Face) | [OpenAI API](https://platform.openai.com/) <br> [Google AI Platform](https://cloud.google.com/ai-platform/) <br> [Anthropic API](https://docs.anthropic.com/claude/reference/getting-started-with-the-api) <br> [Cohere API](https://docs.cohere.com/docs) <br> [OpenRouter](https://openrouter.ai/) <br> [Hugging Face Inference API](https://huggingface.co/inference-api) <br> [GPTRouter](https://gpt-router.writesonic.com/) |  [] |
-| Web Frameworks (Gradio, Streamlit)                        | [Gradio](https://www.gradio.app/) <br> [Streamlit](https://docs.streamlit.io/) <br> [ZeroSpace Notebook](https://colab.research.google.com/drive/1LcVUW5wsJTO2NGmozjji5CkC--646LgC)                          |  [] |
-| User Interfaces, Chatbots                               | [Chainlit](https://docs.chainlit.io/overview) <br> [Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat) <br> [llm-ui](https://github.com/llm-ui-kit/llm-ui)                               |  [] |
-| End-to-End LLM Projects |  [Awesome NLP Projects](https://github.com/EugeniuCostezki/awesome-nlp-projects)  | [] |
-| LLM Application Frameworks | [LangChain](https://github.com/hwchase17/langchain) <br> [Haystack](https://haystack.deepset.ai/) <br> [Semantic Kernel](https://github.com/microsoft/semantic-kernel) <br> [LlamaIndex](https://github.com/jerryjliu/llama_index) <br> [LMQL](https://lmql.ai) <br> [ModelFusion](https://github.com/lgrammel/modelfusion) <br> [Flappy](https://github.com/pleisto/flappy) <br> [LiteChain](https://github.com/rogeriochaves/litechain) <br> [magentic](https://github.com/jackmpcollins/magentic) | [] |
+## 3.3 Deep Learning Architectures for NLP
 
-** MLOps for LLMs**
+* **Recurrent Neural Networks (RNNs):**
+    * Suitable for sequential data like text.
+    * Types: LSTMs, GRUs.
+* **Attention Mechanism:** Allows the network to focus on specific parts of the input sequence.
+* **Convolutional Neural Networks (CNNs) for Text:** 
+    * Can capture local patterns in text.
+    * Used for text classification and other tasks.
+* **Sequence-to-Sequence Models:**
+    * Used for tasks like machine translation and text summarization.
+    * Encoder-decoder architecture.
+* **Transformers:** The dominant architecture for sequence-to-sequence tasks, based on attention mechanisms.
 
-| Topic                                          | Resources                                                                                                                          | Practices |
-|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------|
-| CI/CD, Monitoring, Model Management            | [CometLLM](https://github.com/comet-ml/comet-llm) <br> [MLflow](https://mlflow.org/) <br> [Kubeflow](https://www.kubeflow.org/) <br> [Evidently](https://github.com/evidentlyai/evidently) <br> [Arthur Shield](https://www.arthur.ai/get-started)  <br>  [Mona](https://github.com/monalabs/mona-openai) <br> [Openllmetry](https://github.com/traceloop/openllmetry) <br> [Graphsignal](https://graphsignal.com/) <br> [Arize-Phoenix](https://phoenix.arize.com/)                |  [] |
-| Experiment Tracking, Model Versioning          | [Weights & Biases](https://wandb.ai/site/solutions/llmops) <br> [MLflow Tracking](https://www.mlflow.org/docs/latest/tracking.html) |  [] |
-| Data & Model Pipelines                       | [ZenML](https://zenml.io/) <br> [DVC](https://dvc.org/)                                                                                   |  [] |
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/),  [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/), [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 
+| Blog Posts | [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) | 
 
-** LLM Security**
+# Chapter 4: Large Language Models (LLMs)
 
-| Topic                                             | Resources                                                                                                                                  | Practices |
-|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Prompt Hacking (Injection, Leaking, Jailbreaking) | [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) <br> [Prompt Injection Primer](https://github.com/jthack/PIPE) <br> [Awesome LLM Security](https://github.com/corca-ai/awesome-llm-security) |  [] |
-| Backdoors (Data Poisoning, Trigger Backdoors)      | [Trojaning Language Models for Fun and Profit](https://arxiv.org/abs/2008.00313) <br> [Hidden Trigger Backdoor Attacks](https://arxiv.org/abs/1912.02257) |  [] |
-| Defensive Measures (Red Teaming, Garak, Langfuse)  | [Red Teaming LLMs](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming) <br> [garak](https://github.com/leondz/garak/) <br> [Langfuse](https://github.com/langfuse/langfuse) |  [] | 
+## 4.1 The Transformer Architecture
 
-Let's embark on this NLP journey together! 
+* **Attention Mechanism:**
+    * Self-attention
+    * Multi-head attention.
+    * **Scaled Dot-Product Attention:** The core attention mechanism used in Transformers.
+* **Residual Connections:** Help train very deep networks.
+* **Layer Normalization:** Improves training stability.
+* **Positional Encodings:** Encoding the order of words in a sequence.
+
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/), [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) |  
+
+## 4.2 LLM Architectures 
+
+* **Generative Pre-trained Transformer Models (GPT):** Autoregressive models, good at text generation.
+* **Bidirectional Encoder Representations from Transformers (BERT):**  Bidirectional models, excel at understanding context.
+* **T5 (Text-to-Text Transfer Transformer):**  A unified framework that treats all NLP tasks as text-to-text problems. 
+* **BART (Bidirectional and Auto-Regressive Transformers):** Combines the strengths of BERT and GPT for both understanding and generation.
+
+| Category | Resources |
+|---|---|
+| Papers & Code | [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) |
+
+## 4.3 LLM Pre-training 
+
+* **Masked Language Modeling (MLM):** Predicting masked words in a sentence (used in BERT).
+* **Causal Language Modeling (CLM):** Predicting the next word in a sequence (used in GPT). 
+
+| Category | Resources |
+|---|---|
+| Course Material | [Hugging Face: Causal Language Modeling](https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt) |
+
+## 4.4 LLM Post-training 
+
+* **Domain Adaptation:**  Adapting a pre-trained LLM to a specific domain or industry.
+* **Task-Specific Fine-Tuning:**  Fine-tuning a pre-trained LLM on a specific downstream task with labeled data.
+
+## 4.5 Fine-tuning LLMs
+
+* **Supervised Fine-Tuning (SFT):** Training on labeled data for a specific task.
+
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) | 
+
+## 4.6 Adapting LLMs
+
+* **Parameter-Efficient Fine-Tuning (PEFT):** Updating only a small subset of model parameters to reduce computational cost. Methods include:
+    * **LoRA (Low-Rank Adaptation)**
+    * **Adapters**
+* **Reinforcement Learning from Human Feedback (RLHF):** Using human feedback to train reward models and improve LLM alignment with human preferences.
+
+| Category | Resources |
+|---|---|
+| Blog Posts | [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft) | 
+| Blog Tutorials & Code | [LoRA Insights](https://lightning.ai/pages/community/lora-insights/), [Distilabel](https://github.com/argilla-io/distilabel) |
+| Blog Posts & Code Examples | [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) | 
+
+## 4.7 Scaling LLMs: Efficiency
+
+* **Mixture of Experts (MoE):** Sparsely activated models where different parts of the input are routed to specialized experts for processing.
+* **Efficient Transformers:**
+    * **Reformer:** Uses locality-sensitive hashing (LSH) to reduce the complexity of attention.
+    * **Linformer:** Approximates attention with linear complexity. 
+    * **Performer:** Employs efficient attention mechanisms based on kernel methods.
+
+| Category | Resources |
+|---|---|
+| Papers | [GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://arxiv.org/pdf/2112.06905.pdf) | 
+
+## 4.8 Scaling LLMs: Sparsity
+
+* **Switch Transformers:**  Use a routing mechanism to activate only a subset of parameters for each input.
+* **Sparse Attention:** Techniques that selectively attend to a subset of tokens in the input sequence.
+    * **Longformer:** Extends attention span using a combination of local and global attention. 
+    * **BigBird:**  Employs a sparse attention mechanism with linear complexity.
+* **Model Compression:**
+    * **Knowledge Distillation:** Training smaller student models to mimic the behavior of larger teacher models.
+    * **Quantization:** Reducing the precision of model weights and activations.
+    * **Pruning:**  Removing less important connections in the neural network. 
+
+| Category | Resources |
+|---|---|
+| Papers | [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961.pdf), [Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150), [Big Bird: Transformers for Longer Sequences](https://arxiv.org/abs/2007.14062) | 
+
+# Chapter 5: LLM Evaluation 
+
+## 5.1 LLM Evaluation Benchmarks
+
+* **GLUE (General Language Understanding Evaluation):** A collection of resources for training, evaluating, and analyzing natural language understanding systems. 
+* **SuperGLUE:**  A more challenging benchmark for language understanding.
+* **SQuAD (Stanford Question Answering Dataset):**  A reading comprehension dataset.
+* **Other Benchmarks:**  Explain other benchmarks relevant to specific LLM tasks.
+
+## 5.2 LLM Evaluation Metrics
+
+* **Perplexity:**  Measures how well a language model predicts a sample of text. 
+* **BLEU (Bilingual Evaluation Understudy):** Measures the similarity between a machine-generated translation and human translations.
+* **ROUGE (Recall-Oriented Understudy for Gisting Evaluation):** Measures the overlap of n-grams between a generated summary and reference summaries. 
+* **METEOR (Metric for Evaluation of Translation with Explicit ORdering):**  A metric for machine translation evaluation that considers synonyms and paraphrases. 
+* **Accuracy:**  The proportion of correctly classified instances.
+* **F1-score:**  The harmonic mean of precision and recall.
+
+## 5.3 Prompt Engineering
+
+* **Zero-Shot Prompting:**  Getting the model to perform a task without any task-specific training examples.
+* **Few-Shot Prompting:**  Providing a few examples in the prompt to guide the model.
+* **Chain-of-Thought Prompting:** Encouraging the model to break down reasoning into steps.
+* **ReAct (Reason + Act):** Combining reasoning and action in prompts.
+
+| Category | Resources |
+|---|---|
+| Guides & Tools | [Prompt Engineering Guide](https://www.promptingguide.ai/) |
+| Blog Tutorials | [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)  |
+| Papers | [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) |
+
+## 5.4 Retrieval Augmented Generation (RAG) 
+
+* **Combining LLMs with External Knowledge:** Using external data sources to augment LLM responses.
+* **Components:**
+    * **Document Retriever:**  Finds relevant documents.
+    * **Contextualizer:**  Extracts relevant passages from documents.
+    * **Answer Synthesizer:** Generates the final response using the retrieved context and the LLM.
+
+| Category | Resources |
+|---|---|
+| Code Examples | [LangChain](https://python.langchain.com/), [LlamaIndex](https://docs.llamaindex.ai/en/stable/), [FastRAG](https://github.com/IntelLabs/fastRAG) |
+
+# Chapter 6: Multimodal Learning 
+
+## 6.1 Multimodal LLMs
+
+* **Learning from Multiple Modalities:** LLMs that can process and generate both text and other modalities, such as images, videos, and audio.
+* **CLIP (Contrastive Language-Image Pretraining):**  A model that learns joint representations of text and images.
+* **ViT (Vision Transformer):**  Applying the Transformer architecture to image data.
+* **Other Multimodal Models:** Explore other architectures like LLaVA, MiniCPM-V, and GPT-SoVITS.
+
+| Category | Resources |
+|---|---|
+| Papers | [OpenAI CLIP](https://openai.com/research/clip) |
+| Blog Posts | [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) | 
+
+## 6.2 Vision-Language Tasks
+
+* **Image Captioning:** Generating descriptions for images.
+* **Visual Question Answering (VQA):** Answering questions about images.
+* **Visual Reasoning:**  Performing logical reasoning based on visual input.
+
+| Category | Resources |
+|---|---|
+| Docs | [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) | 
+
+## 6.3 Multimodal Applications
+
+* **Text-to-Image Generation:** Generating images from text descriptions.
+* **Video Understanding:** Analyzing and understanding video content.
+* **Emerging Trends:**
+    * **Neuro-Symbolic AI:** Combining neural networks with symbolic reasoning. 
+    * **LLMs for Robotics:** Using LLMs to control and interact with robots. 
+
+| Category | Resources |
+|---|---|
+| Models & Code | [Stability AI: Stable Diffusion](https://stability.ai/stable-image), [OpenAI DALL-E 2](https://openai.com/dall-e-2), [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) |
+
+# Chapter 7: Deployment and Productionizing LLMs
+
+## 7.1 Deployment Strategies
+
+* **Local Servers:** Deploying LLMs on local machines for development and testing.
+* **Cloud Deployment:** Using cloud platforms like AWS, GCP, and Azure for scalable LLM deployment.
+* **Serverless Functions:** Deploying LLM inference as serverless functions for cost-effectiveness.
+* **Edge Deployment:**  Running LLMs on edge devices like smartphones and IoT devices.
+
+| Category | Resources |
+|---|---|
+| Tools | [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/) | 
+|  APIs & Platforms | [SkyPilot](https://github.com/skypilot-org/skypilot), [Hugging Face Inference API](https://huggingface.co/inference-api)  |
+
+## 7.2 Inference Optimization
+
+* **Quantization:** Reducing the precision of model weights and activations to reduce memory footprint and speed up inference.
+* **Flash Attention:** Optimizing the attention mechanism for faster and more efficient computation.
+* **Knowledge Distillation:** Training smaller student models to mimic the behavior of larger teacher models.
+* **Pruning:**  Removing less important connections in the neural network.
+* **Speculative Decoding:** Predicting future tokens during inference to speed up generation.
+
+| Category | Resources |
+|---|---|
+| Blog Tutorials | [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) |
+| Code Examples | [Flash-Attention](https://github.com/Dao-AILab/flash-attention)  |
+
+## 7.3 Building with LLMs
+
+* **APIs:**  Using pre-trained LLMs through APIs provided by OpenAI, Google, and others.
+* **Web Frameworks:** Creating web applications that interact with LLMs using frameworks like Gradio and Streamlit.
+* **User Interfaces:** Building graphical user interfaces for LLM applications.
+* **Chatbots:** Building conversational interfaces powered by LLMs.
+
+| Category | Resources |
+|---|---|
+| APIs & Platforms | [OpenAI API](https://platform.openai.com/), [Google AI Platform](https://cloud.google.com/ai-platform/), [Gradio](https://www.gradio.app/), [Streamlit](https://docs.streamlit.io/)  | 
+
+## 7.4 MLOps for LLMs
+
+* **CI/CD:** Continuous integration and continuous delivery pipelines for LLM development.
+* **Monitoring:**  Tracking LLM performance and detecting issues in production.
+* **Model Management:**  Managing different versions of LLM models and their deployments.
+* **Experiment Tracking:** Tracking experiments, hyperparameters, and results during LLM development.
+* **Data and Model Pipelines:**  Building pipelines for data preprocessing, training, and deployment.
+
+| Category | Resources |
+|---|---|
+| Tools | [CometLLM](https://github.com/comet-ml/comet-llm), [MLflow](https://mlflow.org/) |
+
+## 7.5 LLM Security
+
+* **Prompt Hacking:** Techniques to manipulate LLM behavior through malicious prompts. 
+    * **Prompt Injection**
+    * **Prompt Leaking**
+    * **Jailbreaking**
+* **Backdoors:**  Introducing vulnerabilities in LLMs during training. Methods include:
+    * **Data Poisoning**
+    * **Trigger Backdoors**
+* **Defensive Measures:** Protecting LLMs from attacks and ensuring responsible use. Methods include:
+    * **Red Teaming**
+    * **Input Sanitization**
+    * **Output Monitoring**
+
+| Category | Resources |
+|---|---|
+| Guides & Cheat Sheets | [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [Prompt Injection Primer](https://github.com/jthack/PIPE) |
+

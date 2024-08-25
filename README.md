@@ -41,18 +41,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 ## 1.1 Introduction to NLP
 
-* **What is NLP?** Explain the core concepts of Natural Language Processing, including:
-    * **Syntax:** The arrangement of words and phrases to create well-formed sentences.
-    * **Semantics:** The meaning of words, phrases, and sentences.
-    * **Pragmatics:** How context contributes to meaning in language.
-    * **Discourse:** How language is used in conversation and text to convey meaning beyond individual sentences.
+* **[Introduction to Natural Language Processing?](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** Explain the core concepts of Natural Language Processing
 
-
-### Learning Resources
-
-| Resources | Description |
-|---|---|
-| [Introduction to Natural Language Processing](https://krchowdhary.com/nlsp-lect/nlplect-8.pdf) | a lecture on the introduction to natural language processing (NLP), covering topics like characteristics of natural languages, levels of linguistic analysis, syntax, semantics, pragmatics, prosody, and computational linguistics. |
+<sub>Source: [Introduction to Natural Language Processing Lecturer by K.R. Chowdhary](https://krchowdhary.com/nlsp-lect/nlplect-8.pdf)</sub> 
 
 ## 1.2 Text Preprocessing
 

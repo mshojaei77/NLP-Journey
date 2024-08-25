@@ -25,26 +25,38 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 | Resources | Description |
 |---|---|
-| [What is Natural Language Processing (NLP)?](https://www.datacamp.com/blog/what-is-natural-language-processing) | Introduces core concepts and applications of NLP. |
+| [Understanding Natural Language Processing](https://dev.to/avinashvagh/understanding-the-concept-of-natural-language-processing-nlp-and-prompt-engineering-35hg) | A comprehensive overview of NLP, its history, techniques, and applications, including prompt engineering. |
+| [What is NLP?](https://www.secoda.co/glossary/what-is-nlp-natural-language-processing) | Detailed insights into NLP's workings, challenges, and its impact on technology interactions. |
+| [NLP Definition from TechTarget](https://www.techtarget.com/searchenterpriseai/definition/natural-language-processing-NLP) | An explanation of NLP's history, techniques, and its applications in various fields. |
+| [IBM's Overview of NLP](https://www.ibm.com/topics/natural-language-processing) | Discusses NLP's role in AI, its applications in business, and the importance of model selection. |
+| [Introduction to NLP by TextMine](https://textmine.com/post/an-introduction-to-natural-language-processing) | An introduction to NLP's key aspects and its applications across industries. |
 
 ## 1.2 Text Preprocessing
 
+Text preprocessing is a crucial step in Natural Language Processing (NLP) that prepares raw text data for analysis and model training. This section outlines modern techniques and resources relevant to text preprocessing as of 2024.
+
 * **Tokenization:**
-    * **Word Tokenization:** Breaking text into individual words.
-    * **Subword Tokenization:** Breaking words into smaller units (subwords), like Byte Pair Encoding (BPE) and SentencePiece. This helps handle out-of-vocabulary words.
-* **Stemming:** Reducing words to their base or root form (e.g., "running" -> "run").
-* **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" -> "good").
-* **Stop Word Removal:** Removing common words that carry less meaning (e.g., "the", "a", "is").
-* **Punctuation Handling:** Removing or standardizing punctuation.
+    * **Word Tokenization:** Breaking text into individual words, which is essential for various NLP tasks.
+    * **Subword Tokenization:** Dividing words into smaller units (subwords) using methods like Byte Pair Encoding (BPE) and SentencePiece. This technique is particularly useful for handling out-of-vocabulary words and improving model performance.
+* **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
+* **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
+* **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
+* **Punctuation Handling:** Standardizing or removing punctuation to ensure consistency in the text data.
+* **Normalization:** Converting text to a standard format, such as lowercasing, removing extra spaces, and correcting misspellings, to improve the quality of the data.
+* **Text Augmentation:** Techniques such as synonym replacement, random insertion, or back-translation to artificially expand the training dataset and improve model robustness.
 
 | Resources | Description |
 |---|---|
+| [Neptune.ai: Tokenization in NLP](https://neptune.ai/blog/tokenization-in-nlp) | Comprehensive overview of tokenization types, challenges, and tools available in the NLP community. |
 | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) | Explains stemming and lemmatization techniques. |
 | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) | Practical notebook for tokenization, lemmatization, and stemming. |
 | [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) | Video tutorial on building a tokenizer for GPT. |
-| [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index) | Documentation on tokenization tools. |
-| [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
-| [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
+| [Tokenmonster GitHub Repository](https://github.com/tokenmonster) | A new tokenization method aimed at improving the performance of large language models by optimizing token representation. |
+| [WandB: An introduction to tokenization](https://wandb.ai/mostafaibrahim17/ml-articles/reports/An-introduction-to-tokenization-in-natural-language-processing--Vmlldzo3NTM4MzE5) | A guide exploring essential tokenization techniques and their applications in NLP. |
+| [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
+| [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
+| [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) | Detailed documentation on tokenization tools and libraries, emphasizing modern approaches in NLP. |
+| [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization) | Official guide on using spaCy for tokenization and other NLP tasks, highlighting its efficiency and capabilities. |
 
 ## 1.3 Feature Engineering
 
@@ -54,6 +66,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 | Resources | Description |
 |---|---|
+| [Introduction to the Bag-of-Words (BoW) Model - PyImageSearch](https://pyimagesearch.com/2022/07/04/introduction-to-the-bag-of-words-bow-model/) | A comprehensive guide explaining the Bag-of-Words model, its implementation, pros and cons, and practical applications in natural language processing. |
+| [A Quick Introduction to Bag of Words and TF-IDF](https://dataknowsall.com/blog/bowtfidf.html) | This article introduces the Bag-of-Words model and TF-IDF, detailing how they are used in text processing and machine learning, along with practical coding examples. |
+| [N-grams Made Simple & How To Implement In Python (NLTK) - Spot Intelligence](https://spotintelligence.com/n-grams-made-simple-how-to-implement-in-python-nltk/) | An easy-to-follow resource that explains N-grams, their significance in NLP, and how to implement them using Python's NLTK library. |
+| [NLP Basics: Tokens, N-Grams, and Bag-of-Words Models - Zilliz blog](https://zilliz.com/learn/introduction-to-natural-language-processing-tokens-ngrams-bag-of-words-models) | This blog post covers the fundamentals of NLP, including tokens, N-grams, and Bag-of-Words models, providing insights into their applications and limitations. |
 | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | Documentation on text feature extraction methods. |
 
 ## 1.4 Word Embeddings

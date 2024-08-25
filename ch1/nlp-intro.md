@@ -18,6 +18,7 @@ Linguistics is the scientific study of language, encompassing both spoken and wr
 #### **Levels of Language**
 
 Linguistics is organized into several levels, each of which focuses on a different aspect of language. These levels are integral to understanding how language operates and how it can be processed computationally.
+![image](https://github.com/user-attachments/assets/2995b1b1-32e1-4c04-9fa1-50d30a6f52a0)
 
 1. **Phonetics:** This is the study of the physical sounds of speech. Phonetics deals with how sounds are produced (articulatory phonetics), how they are transmitted (acoustic phonetics), and how they are perceived (auditory phonetics). In NLP, phonetics is typically not the primary focus because most NLP tasks deal with text. However, phonetics becomes important in speech recognition and synthesis systems, where understanding the nuances of sound production and perception is crucial.
 
@@ -31,7 +32,7 @@ Linguistics is organized into several levels, each of which focuses on a differe
 
 6. **Discourse:** Discourse analysis looks at language beyond the sentence level, focusing on how sentences are connected to form coherent texts or conversations. It involves understanding how different parts of a text relate to each other, such as through anaphora (the use of pronouns to refer back to something previously mentioned) or coherence relations (how ideas are logically connected). Discourse analysis is vital in NLP for tasks such as summarization, where the goal is to produce a coherent summary of a longer text, or dialogue systems, where understanding the flow of conversation is essential.
 
-7. **Pragmatics:** Pragmatics deals with how language is used in context to achieve specific goals. It involves understanding not just what is said, but also what is meant in a given situation. Pragmatics is concerned with the intended meaning behind the words, which can be influenced by factors like tone, speaker intent, and cultural context. In NLP, pragmatics plays a role in areas such as dialogue systems, where understanding the user's intent is crucial, and in generating natural language responses that are contextually appropriate.
+7. **Pragmatics:** Pragmatics deals with how language is used in context to achieve specific goals. It involves understanding not just what is said, but also what is meant in a given situation. Pragmatics is concerned with the intended meaning behind the words, which can be influenced by factors like tone, speaker intent, and cultural context. In NLP, pragmatics plays a role in areas such as LLM-based dialogue systems like chatgpt, where understanding the user's intent is crucial, and in generating natural language responses that are contextually appropriate.
 
 #### **Spoken vs. Written Language**
 

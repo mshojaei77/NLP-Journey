@@ -5,36 +5,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 **Table of Contents**
 
 * [Chapter 1: Foundations of NLP](#chapter-1-foundations-of-nlp)
-    * [1.1 Introduction to NLP](#11-introduction-to-nlp)
-    * [1.2 Text Preprocessing](#12-text-preprocessing)
-    * [1.3 Feature Engineering](#13-feature-engineering)
-    * [1.4 Word Embeddings](#14-word-embeddings)
 * [Chapter 2: Essential NLP Tasks](#chapter-2-essential-nlp-tasks)
-    * [2.1 Text Classification](#21-text-classification)
-    * [2.2 Sentiment Analysis](#22-sentiment-analysis)
-    * [2.3 Named Entity Recognition (NER)](#23-named-entity-recognition-ner)
-    * [2.4 Topic Modeling](#24-topic-modeling)
 * [Chapter 3: Deep Learning for NLP](#chapter-3-deep-learning-for-nlp)
-    * [3.1 Neural Network Fundamentals](#31-neural-network-fundamentals)
-    * [3.2 Deep Learning Frameworks](#32-deep-learning-frameworks)
-    * [3.3 Deep Learning Architectures for NLP](#33-deep-learning-architectures-for-nlp)
 * [Chapter 4: Large Language Models (LLMs)](#chapter-4-large-language-models-llms)
-    * [4.1 The Transformer Architecture](#41-the-transformer-architecture)
-    * [4.2 LLM Architectures](#42-llm-architectures)
-    * [4.3 LLM Training](#43-llm-training)
-    * [4.4 LLM Evaluation](#44-llm-evaluation)
-    * [4.5 LLM Deployment](#45-llm-deployment)
 * [Chapter 5: Multimodal Learning](#chapter-5-multimodal-learning)
-    * [5.1 Multimodal LLMs](#51-multimodal-llms)
-    * [5.2 Vision-Language Tasks](#52-vision-language-tasks)
-    * [5.3 Multimodal Applications](#53-multimodal-applications)
 * [Chapter 6: Deployment and Productionizing LLMs](#chapter-6-deployment-and-productionizing-llms)
-    * [6.1 Deployment Strategies](#61-deployment-strategies)
-    * [6.2 Inference Optimization](#62-inference-optimization)
-    * [6.3 Building with LLMs](#63-building-with-llms)
-    * [6.4 MLOps for LLMs](#64-mlops-for-llms)
-    * [6.5 LLM Security](#65-llm-security)
-
 ---
 
 # Chapter 1: Foundations of NLP
@@ -48,9 +23,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Discourse:** How language is used in conversation and text to convey meaning beyond individual sentences.
 * **Applications of NLP:** Provide a broad overview of how NLP is used in various domains.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [What is Natural Language Processing (NLP)?](https://www.datacamp.com/blog/what-is-natural-language-processing) |
+| [What is Natural Language Processing (NLP)?](https://www.datacamp.com/blog/what-is-natural-language-processing) | Introduces core concepts and applications of NLP. |
 
 ## 1.2 Text Preprocessing
 
@@ -62,13 +37,14 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Stop Word Removal:** Removing common words that carry less meaning (e.g., "the", "a", "is").
 * **Punctuation Handling:** Removing or standardizing punctuation.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) |
-| Notebooks | [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) |
-| Video Tutorials | [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) |
-| Docs | [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index), [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus) |
-| Code Examples | [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html) |
+| [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) | Explains stemming and lemmatization techniques. |
+| [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) | Practical notebook for tokenization, lemmatization, and stemming. |
+| [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) | Video tutorial on building a tokenizer for GPT. |
+| [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index) | Documentation on tokenization tools. |
+| [NLTK Stop Words](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
+| [NLTK Stemming and Lemmatization](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
 
 ## 1.3 Feature Engineering
 
@@ -76,9 +52,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **TF-IDF:** A statistical measure that reflects how important a word is to a document in a collection.
 * **N-grams:** Sequences of N consecutive words or characters.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Docs | [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) |
+| [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | Documentation on text feature extraction methods. |
 
 ## 1.4 Word Embeddings
 
@@ -89,11 +65,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **ELMo:** Learns contextualized word representations by considering the entire sentence.
     * **BERT:** Uses a bidirectional transformer to generate deep contextualized word embeddings.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/), [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html) |
-| Code Examples | [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) |
-| Papers | [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) |
+| [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/) | Visual explanation of Word2Vec. |
+| [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html) | Overview of N-gram language models. |
+| [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) | Code examples for Word2Vec using Gensim. |
+| [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | Paper and resources on GloVe embeddings. |
 
 # Chapter 2: Essential NLP Tasks
 
@@ -109,11 +86,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * Convolutional Neural Networks (CNNs)
     * Transformers
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Tutorials | [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html) |
-| Docs | [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) |
-| Code Examples | [FastText](https://github.com/facebookresearch/fastText) |
+| [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html) | Tutorial on text classification using scikit-learn. |
+| [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) | Documentation on text classification with Hugging Face. |
+| [FastText](https://github.com/facebookresearch/fastText) | Code examples and resources for FastText. |
 
 ## 2.2 Sentiment Analysis
 
@@ -122,9 +99,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Machine Learning Approach:** Training models on labeled data to predict sentiment.
 * **Aspect-Based Sentiment Analysis:** Identifying sentiment towards specific aspects of an entity.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Code Examples | [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html), [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis), [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) |
+| [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html) | Code examples for sentiment analysis using NLTK. |
+| [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) | Quickstart guide for sentiment analysis with TextBlob. |
+| [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) | Code and documentation for VADER sentiment analysis. |
 
 ## 2.3 Named Entity Recognition (NER)
 
@@ -133,10 +112,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Machine Learning-Based Systems:** Training models to recognize entities.
 * **Popular Tools:** NLTK, spaCy, Transformers
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Docs | [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification) |
-| Code Examples | [NLTK NER](https://www.nltk.org/book/ch07.html), [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities), [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) |
+| [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification) | Documentation on NER with Hugging Face. |
+| [NLTK NER](https://www.nltk.org/book/ch07.html) | NLTK resources for NER. |
+| [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities) | spaCy documentation on NER. |
+| [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) | Toolkit for information extraction, including NER. |
 
 ## 2.4 Topic Modeling
 
@@ -144,9 +125,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Latent Dirichlet Allocation (LDA):** A probabilistic model for discovering latent topics in a collection of documents.
 * **Non-Negative Matrix Factorization (NMF):** A linear algebra technique for topic modeling.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Code Examples | [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html), [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf), [BigARTM](https://github.com/bigartm/bigartm) |
+| [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html) | Tutorial on topic modeling with Gensim. |
+| [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf) | Documentation on NMF with scikit-learn. |
+| [BigARTM](https://github.com/bigartm/bigartm) | Code and resources for advanced topic modeling. |
 
 # Chapter 3: Deep Learning for NLP
 
@@ -160,9 +143,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Vanishing Gradients:** Challenges in training deep neural networks for NLP.
 * **Exploding Gradients:** Challenges in training deep neural networks for NLP.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Video Tutorials | [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk), [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c) |
+| [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk) | Visual introduction to neural networks. |
+| [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c) | Comprehensive crash course on deep learning. |
 
 ## 3.2 Deep Learning Frameworks
 
@@ -174,10 +158,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * Community Support
     * Computational efficiency
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Tutorials | [PyTorch Tutorials](https://pytorch.org/tutorials/), [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) |
-| Docs | [JAX Documentation](https://jax.readthedocs.io/en/latest/) |
+| [PyTorch Tutorials](https://pytorch.org/tutorials/) | Official PyTorch tutorials. |
+| [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) | Official TensorFlow tutorials. |
+| [JAX Documentation](https://jax.readthedocs.io/en/latest/) | Documentation for JAX. |
 
 ## 3.3 Deep Learning Architectures for NLP
 
@@ -193,10 +178,13 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * Encoder-decoder architecture.
 * **Transformers:** The dominant architecture for sequence-to-sequence tasks, based on attention mechanisms.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/), [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/), [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) |
-| Blog Posts | [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) |
+| [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) | In-depth explanation of LSTMs. |
+| [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) | Blog post on the effectiveness of RNNs. |
+| [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/) | Introduction to CNNs for NLP. |
+| [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual explanation of the Transformer architecture. |
+| [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) | Overview of Transformer networks. |
 
 # Chapter 4: Large Language Models (LLMs)
 
@@ -210,9 +198,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Layer Normalization:** Improves training stability.
 * **Positional Encodings:** Encoding the order of words in a sequence.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/), [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) |
+| [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual introduction to the Transformer architecture. |
+| [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) | Visual explanation of GPT-2. |
 
 ## 4.2 LLM Architectures
 
@@ -221,9 +210,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **T5 (Text-to-Text Transfer Transformer):** A unified framework that treats all NLP tasks as text-to-text problems.
 * **BART (Bidirectional and Auto-Regressive Transformers):** Combines the strengths of BERT and GPT for both understanding and generation.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Papers & Code | [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) |
+| [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) | Repository with papers and code on LLMs. |
 
 ## 4.3 LLM Training
 
@@ -241,31 +230,29 @@ This repository provides a comprehensive guide for learning Natural Language Pro
         * **Adapters**
     * **Reinforcement Learning from Human Feedback (RLHF):** Using human feedback to train reward models and improve LLM alignment with human preferences.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) |
-| Blog Posts | [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft) |
-| Blog Tutorials & Code | [LoRA Insights](https://lightning.ai/pages/community/lora-insights/), [Distilabel](https://github.com/argilla-io/distilabel) |
-| Blog Posts & Code Examples | [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) |
+| [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) | Tutorial on fine-tuning a Llama 2 model. |
+| [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft) | Blog post on parameter-efficient fine-tuning. |
+| [LoRA Insights](https://lightning.ai/pages/community/lora-insights/) | Insights into LoRA for parameter-efficient fine-tuning. |
+| [Distilabel](https://github.com/argilla-io/distilabel) | Code and resources for distillation and labeling. |
+| [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) | Introduction to RLHF for training LLMs. |
 
 ## 4.4 LLM Evaluation
 
 * **Evaluation Benchmarks:**
-
-
 * **Evaluation Metrics:**
-
 * **Prompt Engineering:**
     * **Zero-Shot Prompting:** Getting the model to perform a task without any task-specific training examples.
     * **Few-Shot Prompting:** Providing a few examples in the prompt to guide the model.
     * **Chain-of-Thought Prompting:** Encouraging the model to break down reasoning into steps.
     * **ReAct (Reason + Act):** Combining reasoning and action in prompts.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Guides & Tools | [Prompt Engineering Guide](https://www.promptingguide.ai/) |
-| Blog Tutorials | [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) |
-| Papers | [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) |
+| [Prompt Engineering Guide](https://www.promptingguide.ai/) | Comprehensive guide on prompt engineering. |
+| [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | Blog post on prompt engineering. |
+| [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) | Collection of papers on chain-of-thought prompting. |
 
 ## 4.5 LLM Deployment
 
@@ -275,10 +262,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Serverless Functions:** Deploying LLM inference as serverless functions for cost-effectiveness.
     * **Edge Deployment:** Running LLMs on edge devices like smartphones and IoT devices.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Tools | [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/) |
-| APIs & Platforms | [SkyPilot](https://github.com/skypilot-org/skypilot), [Hugging Face Inference API](https://huggingface.co/inference-api) |
+| [LM Studio](https://lmstudio.ai/) | Tool for local LLM deployment. |
+| [Ollama](https://ollama.ai/) | Tool for local LLM deployment. |
+| [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
+| [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
 
 # Chapter 5: Multimodal Learning
 
@@ -289,10 +278,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **ViT (Vision Transformer):** Applying the Transformer architecture to image data.
 * **Other Multimodal Models:** Explore other architectures like LLaVA, MiniCPM-V, and GPT-SoVITS.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Papers | [OpenAI CLIP](https://openai.com/research/clip) |
-| Blog Posts | [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) |
+| [OpenAI CLIP](https://openai.com/research/clip) | Paper on CLIP model. |
+| [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) | Blog post on Vision Transformer. |
 
 ## 5.2 Vision-Language Tasks
 
@@ -300,9 +289,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Visual Question Answering (VQA):** Answering questions about images.
 * **Visual Reasoning:** Performing logical reasoning based on visual input.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Docs | [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) |
+| [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) | Documentation on vision-language tasks. |
 
 ## 5.3 Multimodal Applications
 
@@ -312,9 +301,11 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Neuro-Symbolic AI:** Combining neural networks with symbolic reasoning.
     * **LLMs for Robotics:** Using LLMs to control and interact with robots.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Models & Code | [Stability AI: Stable Diffusion](https://stability.ai/stable-image), [OpenAI DALL-E 2](https://openai.com/dall-e-2), [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) |
+| [Stability AI: Stable Diffusion](https://stability.ai/stable-image) | Model for text-to-image generation. |
+| [OpenAI DALL-E 2](https://openai.com/dall-e-2) | Model for text-to-image generation. |
+| [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) | Documentation on video understanding. |
 
 # Chapter 6: Deployment and Productionizing LLMs
 
@@ -325,10 +316,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Serverless Functions:** Deploying LLM inference as serverless functions for cost-effectiveness.
 * **Edge Deployment:** Running LLMs on edge devices like smartphones and IoT devices.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Tools | [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/) |
-| APIs & Platforms | [SkyPilot](https://github.com/skypilot-org/skypilot), [Hugging Face Inference API](https://huggingface.co/inference-api) |
+| [LM Studio](https://lmstudio.ai/) | Tool for local LLM deployment. |
+| [Ollama](https://ollama.ai/) | Tool for local LLM deployment. |
+| [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
+| [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
 
 ## 6.2 Inference Optimization
 
@@ -338,10 +331,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Pruning:** Removing less important connections in the neural network.
 * **Speculative Decoding:** Predicting future tokens during inference to speed up generation.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Blog Tutorials | [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) |
-| Code Examples | [Flash-Attention](https://github.com/Dao-AILab/flash-attention) |
+| [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) | Blog tutorial on quantization. |
+| [Flash-Attention](https://github.com/Dao-AILab/flash-attention) | Code examples for Flash Attention. |
 
 ## 6.3 Building with LLMs
 
@@ -350,9 +343,12 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **User Interfaces:** Building graphical user interfaces for LLM applications.
 * **Chatbots:** Building conversational interfaces powered by LLMs.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| APIs & Platforms | [OpenAI API](https://platform.openai.com/), [Google AI Platform](https://cloud.google.com/ai-platform/), [Gradio](https://www.gradio.app/), [Streamlit](https://docs.streamlit.io/) |
+| [OpenAI API](https://platform.openai.com/) | API for OpenAI models. |
+| [Google AI Platform](https://cloud.google.com/ai-platform/) | Platform for deploying Google AI models. |
+| [Gradio](https://www.gradio.app/) | Framework for building web interfaces with LLMs. |
+| [Streamlit](https://docs.streamlit.io/) | Framework for building web applications with LLMs. |
 
 ## 6.4 MLOps for LLMs
 
@@ -362,9 +358,10 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Experiment Tracking:** Tracking experiments, hyperparameters, and results during LLM development.
 * **Data and Model Pipelines:** Building pipelines for data preprocessing, training, and deployment.
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Tools | [CometLLM](https://github.com/comet-ml/comet-llm), [MLflow](https://mlflow.org/) |
+| [CometLLM](https://github.com/comet-ml/comet-llm) | Tool for experiment tracking and model management. |
+| [MLflow](https://mlflow.org/) | Open-source platform for the machine learning lifecycle. |
 
 ## 6.5 LLM Security
 
@@ -380,6 +377,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
     * **Input Sanitization**
     * **Output Monitoring**
 
-| Category | Resources |
+| Resources | Description |
 |---|---|
-| Guides & Cheat Sheets | [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [Prompt Injection Primer](https://github.com/jthack/PIPE) |
+| [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | Guide on LLM security risks. |
+| [Prompt Injection Primer](https://github.com/jthack/PIPE) | Primer on prompt injection attacks. |

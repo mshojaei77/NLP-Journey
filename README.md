@@ -41,13 +41,14 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 ## 1.1 Introduction to NLP
 
-* **[Introduction to Natural Language Processing?](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** Explain the core concepts of Natural Language Processing and fundamental linguistic concepts 
+* **[Introduction to Natural Language Processing and fundamental linguistic concepts](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** 
 
 <sub>Sources: [Basics of Linguistics](https://www.ai.uni-hannover.de/fileadmin/ai/teaching/inlp-23s/part02-linguistics.pdf) </sub>
 
 ## 1.2 Text Preprocessing
 
 * **Tokenization:**
+	* Introduction to Tokenization
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
 * **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
@@ -55,7 +56,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 * **Normalization:** Converting text to a standard format, such as lowercasing, removing extra spaces, and correcting misspellings, to improve the quality of the data.
 * **Text Augmentation:** Techniques such as synonym replacement, random insertion, or back-translation to artificially expand the training dataset and improve model robustness.
 
-<sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) ,[ Everything About Tokenization](https://github.com/SumanthRH/tokenization), [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),, [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s), [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus), [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html), [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization)</sub>
+<sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [ Everything About Tokenization](https://github.com/SumanthRH/tokenization) [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),, [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s), [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus), [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html), [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization)</sub>
 
 ### Practical Project
 

@@ -41,7 +41,7 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 ## 1.1 Introduction to NLP
 
-* **[Introduction to Natural Language Processing?](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** Explain the core concepts of Natural Language Processing
+* **[Introduction to Natural Language Processing?](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** Explain the core concepts of Natural Language Processing and fundamental linguistic concepts 
 
 <sub>Sources: [Basics of Linguistics](https://www.ai.uni-hannover.de/fileadmin/ai/teaching/inlp-23s/part02-linguistics.pdf) </sub>
 

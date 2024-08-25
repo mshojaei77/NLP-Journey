@@ -49,7 +49,9 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 Text preprocessing is a crucial step in Natural Language Processing (NLP) that prepares raw text data for analysis and model training. This section outlines modern techniques and resources relevant to text preprocessing as of 2024.
 
-* **[Tokenization](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization.md):** Breaking text into individual words, which is essential for various NLP tasks.
+* **Tokenization:**
+    * **Word Tokenization:** Breaking text into individual words, which is essential for various NLP tasks.
+    * **Subword Tokenization:** Dividing words into smaller units (subwords) using methods like Byte Pair Encoding (BPE) and SentencePiece. This technique is particularly useful for handling out-of-vocabulary words and improving model performance.
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
 * **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
@@ -57,15 +59,16 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Normalization:** Converting text to a standard format, such as lowercasing, removing extra spaces, and correcting misspellings, to improve the quality of the data.
 * **Text Augmentation:** Techniques such as synonym replacement, random insertion, or back-translation to artificially expand the training dataset and improve model robustness.
 
-| Resources | Description |
-|---|---|
-| [Everything About Tokenization](https://github.com/SumanthRH/tokenization)
-| [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) | Explains stemming and lemmatization techniques. |
-| [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) | Practical notebook for tokenization, lemmatization, and stemming. |
-| [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) | Video tutorial on building a tokenizer for GPT. |
-| [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus) | NLTK resource for handling stop words. |
-| [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html) | Code examples for stemming and lemmatization using NLTK. |
-| [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) | Detailed documentation on tokenization tools and libraries, emphasizing modern approaches in NLP. |
+<sub>Source: [Neptune.ai: Tokenization in NLP](https://neptune.ai/blog/tokenization-in-nlp)</sub>
+<sub>Source: [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html)</sub>
+<sub>Source: [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ)</sub>
+<sub>Source: [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s)</sub>
+<sub>Source: [Tokenmonster GitHub Repository](https://github.com/tokenmonster)</sub>
+<sub>Source: [WandB: An introduction to tokenization](https://wandb.ai/mostafaibrahim17/ml-articles/reports/An-introduction-to-tokenization-in-natural-language-processing--Vmlldzo3NTM4MzE5)</sub>
+<sub>Source: [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus)</sub>
+<sub>Source: [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html)</sub>
+<sub>Source: [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index)</sub>
+<sub>Source: [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization)</sub>
 
 ### Practical Project
 
@@ -79,13 +82,11 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **TF-IDF:** A statistical measure that reflects how important a word is to a document in a collection.
 * **N-grams:** Sequences of N consecutive words or characters.
 
-| Resources | Description |
-|---|---|
-| [Introduction to the Bag-of-Words (BoW) Model - PyImageSearch](https://pyimagesearch.com/2022/07/04/introduction-to-the-bag-of-words-bow-model/) | A comprehensive guide explaining the Bag-of-Words model, its implementation, pros and cons, and practical applications in natural language processing. |
-| [A Quick Introduction to Bag of Words and TF-IDF](https://dataknowsall.com/blog/bowtfidf.html) | This article introduces the Bag-of-Words model and TF-IDF, detailing how they are used in text processing and machine learning, along with practical coding examples. |
-| [N-grams Made Simple & How To Implement In Python (NLTK) - Spot Intelligence](https://spotintelligence.com/n-grams-made-simple-how-to-implement-in-python-nltk/) | An easy-to-follow resource that explains N-grams, their significance in NLP, and how to implement them using Python's NLTK library. |
-| [NLP Basics: Tokens, N-Grams, and Bag-of-Words Models - Zilliz blog](https://zilliz.com/learn/introduction-to-natural-language-processing-tokens-ngrams-bag-of-words-models) | This blog post covers the fundamentals of NLP, including tokens, N-grams, and Bag-of-Words models, providing insights into their applications and limitations. |
-| [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction) | Documentation on text feature extraction methods. |
+<sub>Source: [Introduction to the Bag-of-Words (BoW) Model - PyImageSearch](https://pyimagesearch.com/2022/07/04/introduction-to-the-bag-of-words-bow-model/)</sub>
+<sub>Source: [A Quick Introduction to Bag of Words and TF-IDF](https://dataknowsall.com/blog/bowtfidf.html)</sub>
+<sub>Source: [N-grams Made Simple & How To Implement In Python (NLTK) - Spot Intelligence](https://spotintelligence.com/n-grams-made-simple-how-to-implement-in-python-nltk/)</sub>
+<sub>Source: [NLP Basics: Tokens, N-Grams, and Bag-of-Words Models - Zilliz blog](https://zilliz.com/learn/introduction-to-natural-language-processing-tokens-ngrams-bag-of-words-models)</sub>
+<sub>Source: [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction)</sub>
 
 ### Practical Project
 
@@ -101,13 +102,11 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Contextual Embeddings:**
     * **ELMo:** Learns contextualized word representations by considering the entire sentence.
     * **BERT:** Uses a bidirectional transformer to generate deep contextualized word embeddings.
-
-| Resources | Description |
-|---|---|
-| [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/) | Visual explanation of Word2Vec. |
-| [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html) | Overview of N-gram language models. |
-| [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) | Code examples for Word2Vec using Gensim. |
-| [Stanford GloVe](https://nlp.stanford.edu/projects/glove/) | Paper and resources on GloVe embeddings. |
+      
+<sub>Source: [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/)</sub>
+<sub>Source: [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html)</sub>
+<sub>Source: [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html)</sub>
+<sub>Source: [Stanford GloVe](https://nlp.stanford.edu/projects/glove/)</sub>
 
 ### Practical Project
 
@@ -129,11 +128,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * Convolutional Neural Networks (CNNs)
     * Transformers
 
-| Resources | Description |
-|---|---|
-| [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html) | Tutorial on text classification using scikit-learn. |
-| [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification) | Documentation on text classification with Hugging Face. |
-| [FastText](https://github.com/facebookresearch/fastText) | Code examples and resources for FastText. |
+<sub>Source: [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)</sub>
+<sub>Source: [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification)</sub>
+<sub>Source: [FastText](https://github.com/facebookresearch/fastText)</sub>
 
 ### Practical Project
 
@@ -148,11 +145,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Machine Learning Approach:** Training models on labeled data to predict sentiment.
 * **Aspect-Based Sentiment Analysis:** Identifying sentiment towards specific aspects of an entity.
 
-| Resources | Description |
-|---|---|
-| [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html) | Code examples for sentiment analysis using NLTK. |
-| [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) | Quickstart guide for sentiment analysis with TextBlob. |
-| [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) | Code and documentation for VADER sentiment analysis. |
+<sub>Source: [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html)</sub>
+<sub>Source: [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis)</sub>
+<sub>Source: [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment)</sub>
 
 ### Practical Project
 
@@ -167,12 +162,10 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Machine Learning-Based Systems:** Training models to recognize entities.
 * **Popular Tools:** NLTK, spaCy, Transformers
 
-| Resources | Description |
-|---|---|
-| [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification) | Documentation on NER with Hugging Face. |
-| [NLTK NER](https://www.nltk.org/book/ch07.html) | NLTK resources for NER. |
-| [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities) | spaCy documentation on NER. |
-| [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE) | Toolkit for information extraction, including NER. |
+<sub>Source: [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification)</sub>
+<sub>Source: [NLTK NER](https://www.nltk.org/book/ch07.html)</sub>
+<sub>Source: [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities)</sub>
+<sub>Source: [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE)</sub>
 
 ### Practical Project
 
@@ -186,11 +179,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Latent Dirichlet Allocation (LDA):** A probabilistic model for discovering latent topics in a collection of documents.
 * **Non-Negative Matrix Factorization (NMF):** A linear algebra technique for topic modeling.
 
-| Resources | Description |
-|---|---|
-| [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html) | Tutorial on topic modeling with Gensim. |
-| [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf) | Documentation on NMF with scikit-learn. |
-| [BigARTM](https://github.com/bigartm/bigartm) | Code and resources for advanced topic modeling. |
+<sub>Source: [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html)</sub>
+<sub>Source: [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf)</sub>
+<sub>Source: [BigARTM](https://github.com/bigartm/bigartm)</sub>
 
 ### Practical Project
 
@@ -210,10 +201,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Vanishing Gradients:** Challenges in training deep neural networks for NLP.
 * **Exploding Gradients:** Challenges in training deep neural networks for NLP.
 
-| Resources | Description |
-|---|---|
-| [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk) | Visual introduction to neural networks. |
-| [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c) | Comprehensive crash course on deep learning. |
+<sub>Source: [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk)</sub>
+<sub>Source: [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c)</sub>
 
 ### Practical Project
 
@@ -231,11 +220,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * Community Support
     * Computational efficiency
 
-| Resources | Description |
-|---|---|
-| [PyTorch Tutorials](https://pytorch.org/tutorials/) | Official PyTorch tutorials. |
-| [TensorFlow Tutorials](https://www.tensorflow.org/tutorials) | Official TensorFlow tutorials. |
-| [JAX Documentation](https://jax.readthedocs.io/en/latest/) | Documentation for JAX. |
+<sub>Source: [PyTorch Tutorials](https://pytorch.org/tutorials/)</sub>
+<sub>Source: [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)</sub>
+<sub>Source: [JAX Documentation](https://jax.readthedocs.io/en/latest/)</sub>
 
 ### Practical Project
 
@@ -257,13 +244,11 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * Encoder-decoder architecture.
 * **Transformers:** The dominant architecture for sequence-to-sequence tasks, based on attention mechanisms.
 
-| Resources | Description |
-|---|---|
-| [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) | In-depth explanation of LSTMs. |
-| [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) | Blog post on the effectiveness of RNNs. |
-| [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/) | Introduction to CNNs for NLP. |
-| [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual explanation of the Transformer architecture. |
-| [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html) | Overview of Transformer networks. |
+<sub>Source: [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)</sub>
+<sub>Source: [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)</sub>
+<sub>Source: [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/)</sub>
+<sub>Source: [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)</sub>
+<sub>Source: [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html)</sub>
 
 ### Practical Project
 
@@ -283,10 +268,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Layer Normalization:** Improves training stability.
 * **Positional Encodings:** Encoding the order of words in a sequence.
 
-| Resources | Description |
-|---|---|
-| [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Visual introduction to the Transformer architecture. |
-| [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) | Visual explanation of GPT-2. |
+<sub>Source: [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)</sub>
+<sub>Source: [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)</sub>
 
 ### Practical Project
 
@@ -300,10 +283,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Bidirectional Encoder Representations from Transformers (BERT):** Bidirectional models, excel at understanding context.
 * **T5 (Text-to-Text Transfer Transformer):** A unified framework that treats all NLP tasks as text-to-text problems.
 * **BART (Bidirectional and Auto-Regressive Transformers):** Combines the strengths of BERT and GPT for both understanding and generation.
-
-| Resources | Description |
-|---|---|
-| [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) | Repository with papers and code on LLMs. |
+  
+<sub>Source: [LLMDataHub](https://github.com/Zjh-819/LLMDataHub)</sub>
 
 ### Practical Project
 
@@ -327,13 +308,11 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
         * **Adapters**
     * **Reinforcement Learning from Human Feedback (RLHF):** Using human feedback to train reward models and improve LLM alignment with human preferences.
 
-| Resources | Description |
-|---|---|
-| [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html) | Tutorial on fine-tuning a Llama 2 model. |
-| [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft) | Blog post on parameter-efficient fine-tuning. |
-| [LoRA Insights](https://lightning.ai/pages/community/lora-insights/) | Insights into LoRA for parameter-efficient fine-tuning. |
-| [Distilabel](https://github.com/argilla-io/distilabel) | Code and resources for distillation and labeling. |
-| [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy) | Introduction to RLHF for training LLMs. |
+<sub>Source: [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html)</sub>
+<sub>Source: [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft)</sub>
+<sub>Source: [LoRA Insights](https://lightning.ai/pages/community/lora-insights/)</sub>
+<sub>Source: [Distilabel](https://github.com/argilla-io/distilabel)</sub>
+<sub>Source: [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy)</sub>
 
 ### Practical Project
 
@@ -351,11 +330,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * **Chain-of-Thought Prompting:** Encouraging the model to break down reasoning into steps.
     * **ReAct (Reason + Act):** Combining reasoning and action in prompts.
 
-| Resources | Description |
-|---|---|
-| [Prompt Engineering Guide](https://www.promptingguide.ai/) | Comprehensive guide on prompt engineering. |
-| [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | Blog post on prompt engineering. |
-| [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) | Collection of papers on chain-of-thought prompting. |
+<sub>Source: [Prompt Engineering Guide](https://www.promptingguide.ai/)</sub>
+<sub>Source: [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)</sub>
+<sub>Source: [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers)</sub>
 
 ### Practical Project
 
@@ -371,12 +348,10 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * **Serverless Functions:** Deploying LLM inference as serverless functions for cost-effectiveness.
     * **Edge Deployment:** Running LLMs on edge devices like smartphones and IoT devices.
 
-| Resources | Description |
-|---|---|
-| [LM Studio](https://lmstudio.ai/) | Tool for local LLM deployment. |
-| [Ollama](https://ollama.ai/) | Tool for local LLM deployment. |
-| [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
-| [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
+<sub>Source: [LM Studio](https://lmstudio.ai/)</sub>
+<sub>Source: [Ollama](https://ollama.ai/)</sub>
+<sub>Source: [SkyPilot](https://github.com/skypilot-org/skypilot)</sub>
+<sub>Source: [Hugging Face Inference API](https://huggingface.co/inference-api)</sub>
 
 ### Practical Project
 
@@ -393,10 +368,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **ViT (Vision Transformer):** Applying the Transformer architecture to image data.
 * **Other Multimodal Models:** Explore other architectures like LLaVA, MiniCPM-V, and GPT-SoVITS.
 
-| Resources | Description |
-|---|---|
-| [OpenAI CLIP](https://openai.com/research/clip) | Paper on CLIP model. |
-| [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html) | Blog post on Vision Transformer. |
+<sub>Source: [OpenAI CLIP](https://openai.com/research/clip)</sub>
+<sub>Source: [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html)</sub>
 
 ### Practical Project
 
@@ -410,9 +383,7 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Visual Question Answering (VQA):** Answering questions about images.
 * **Visual Reasoning:** Performing logical reasoning based on visual input.
 
-| Resources | Description |
-|---|---|
-| [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling) | Documentation on vision-language tasks. |
+<sub>Source: [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling)</sub>
 
 ### Practical Project
 
@@ -428,11 +399,9 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * **Neuro-Symbolic AI:** Combining neural networks with symbolic reasoning.
     * **LLMs for Robotics:** Using LLMs to control and interact with robots.
 
-| Resources | Description |
-|---|---|
-| [Stability AI: Stable Diffusion](https://stability.ai/stable-image) | Model for text-to-image generation. |
-| [OpenAI DALL-E 2](https://openai.com/dall-e-2) | Model for text-to-image generation. |
-| [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification) | Documentation on video understanding. |
+<sub>Source: [Stability AI: Stable Diffusion](https://stability.ai/stable-image)</sub>
+<sub>Source: [OpenAI DALL-E 2](https://openai.com/dall-e-2)</sub>
+<sub>Source: [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification)</sub>
 
 ### Practical Project
 
@@ -449,12 +418,10 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Serverless Functions:** Deploying LLM inference as serverless functions for cost-effectiveness.
 * **Edge Deployment:** Running LLMs on edge devices like smartphones and IoT devices.
 
-| Resources | Description |
-|---|---|
-| [LM Studio](https://lmstudio.ai/) | Tool for local LLM deployment. |
-| [Ollama](https://ollama.ai/) | Tool for local LLM deployment. |
-| [SkyPilot](https://github.com/skypilot-org/skypilot) | Tool for cloud deployment of LLMs. |
-| [Hugging Face Inference API](https://huggingface.co/inference-api) | API for deploying LLMs. |
+<sub>Source: [LM Studio](https://lmstudio.ai/)</sub>
+<sub>Source: [Ollama](https://ollama.ai/)</sub>
+<sub>Source: [SkyPilot](https://github.com/skypilot-org/skypilot)</sub>
+<sub>Source: [Hugging Face Inference API](https://huggingface.co/inference-api)</sub>
 
 ### Practical Project
 
@@ -470,10 +437,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Pruning:** Removing less important connections in the neural network.
 * **Speculative Decoding:** Predicting future tokens during inference to speed up generation.
 
-| Resources | Description |
-|---|---|
-| [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html) | Blog tutorial on quantization. |
-| [Flash-Attention](https://github.com/Dao-AILab/flash-attention) | Code examples for Flash Attention. |
+<sub>Source: [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html)</sub>
+<sub>Source: [Flash-Attention](https://github.com/Dao-AILab/flash-attention)</sub>
 
 ### Practical Project
 
@@ -488,12 +453,10 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **User Interfaces:** Building graphical user interfaces for LLM applications.
 * **Chatbots:** Building conversational interfaces powered by LLMs.
 
-| Resources | Description |
-|---|---|
-| [OpenAI API](https://platform.openai.com/) | API for OpenAI models. |
-| [Google AI Platform](https://cloud.google.com/ai-platform/) | Platform for deploying Google AI models. |
-| [Gradio](https://www.gradio.app/) | Framework for building web interfaces with LLMs. |
-| [Streamlit](https://docs.streamlit.io/) | Framework for building web applications with LLMs. |
+<sub>Source: [OpenAI API](https://platform.openai.com/)</sub>
+<sub>Source: [Google AI Platform](https://cloud.google.com/ai-platform/)</sub>
+<sub>Source: [Gradio](https://www.gradio.app/)</sub>
+<sub>Source: [Streamlit](https://docs.streamlit.io/)</sub>
 
 ### Practical Project
 
@@ -509,10 +472,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
 * **Experiment Tracking:** Tracking experiments, hyperparameters, and results during LLM development.
 * **Data and Model Pipelines:** Building pipelines for data preprocessing, training, and deployment.
 
-| Resources | Description |
-|---|---|
-| [CometLLM](https://github.com/comet-ml/comet-llm) | Tool for experiment tracking and model management. |
-| [MLflow](https://mlflow.org/) | Open-source platform for the machine learning lifecycle. |
+<sub>Source: [CometLLM](https://github.com/comet-ml/comet-llm)</sub>
+<sub>Source: [MLflow](https://mlflow.org/)</sub>
 
 ### Practical Project
 
@@ -534,10 +495,8 @@ Text preprocessing is a crucial step in Natural Language Processing (NLP) that p
     * **Input Sanitization**
     * **Output Monitoring**
 
-| Resources | Description |
-|---|---|
-| [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | Guide on LLM security risks. |
-| [Prompt Injection Primer](https://github.com/jthack/PIPE) | Primer on prompt injection attacks. |
+<sub>Source: [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)</sub>
+<sub>Source: [Prompt Injection Primer](https://github.com/jthack/PIPE)</sub>
 
 ### Practical Project
 

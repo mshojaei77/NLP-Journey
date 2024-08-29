@@ -47,27 +47,36 @@ This repository provides a comprehensive guide for learning Natural Language Pro
 
 ## 1.2 Text Preprocessing
 
-**Tokenization:**  Breaking down text into smaller, meaningful units called tokens.
+#### Tokenization:
+Breaking down text into smaller, meaningful units called tokens.
 | Topic | Materials |
 |--|--|
 | Introduction to Tokenization, Byte Pair Encoding (BPE) | <a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 | Hugging Face Tokenizersl | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
-| Custom Persian Tokenizer Implementation | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Custom_Tokenizer_Implementation.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| Custom Tokenizer with Hugging Face Tokenizer | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Custom_Tokenizer_Implementation.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
+<sub>Sources: [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [ Everything About Tokenization](https://github.com/SumanthRH/tokenization), [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) </sub>
+
+#### Stemming and Lemmatization:
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
-* **Stop Word Removal:** Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
-* **Punctuation Handling:** Standardizing or removing punctuation to ensure consistency in the text data.
-* **Normalization:** Converting text to a standard format, such as lowercasing, removing extra spaces, and correcting misspellings, to improve the quality of the data.
-* **Text Augmentation:** Techniques such as synonym replacement, random insertion, or back-translation to artificially expand the training dataset and improve model robustness.
+ 
+* <sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), (https://github.com/SumanthRH/tokenization), [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),[NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html)</sub>
 
-<sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [ Everything About Tokenization](https://github.com/SumanthRH/tokenization), [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),, [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s), [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus), [NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html), [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [spaCy Documentation](https://spacy.io/usage/linguistic-features#tokenization)</sub>
+#### Stop Word Removal
+Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.
 
-### Practical Project
+<sub>Sources: [NLTK Stop Words Documentation](https://www.nltk.org/book/ch02.html#stop-words-corpus)</sub>
 
-| Project | Description | Codebase |
-|---|---|---|
-| **Text Preprocessing Project** | A project to demonstrate various text preprocessing techniques such as tokenization, stemming, lemmatization, and stop word removal. | [GitHub Repository](#) |
+
+#### Punctuation Handling:
+Standardizing or removing punctuation to ensure consistency in the text data.
+  
+#### Normalization:
+Converting text to a standard format, such as lowercasing, removing extra spaces, and correcting misspellings, to improve the quality of the data.
+
+#### Text Augmentation:
+Techniques such as synonym replacement, random insertion, or back-translation to artificially expand the training dataset and improve model robustness.
 
 ## 1.3 Feature Engineering
 

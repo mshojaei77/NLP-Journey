@@ -61,7 +61,7 @@ Breaking down text into smaller, meaningful units called tokens.
 * **Stemming:** Reducing words to their base or root form (e.g., "running" becomes "run"). This method simplifies the text but may not always yield valid words.
 * **Lemmatization:** Converting words to their base form using vocabulary analysis (e.g., "better" becomes "good"). Unlike stemming, lemmatization ensures that the resulting words are valid and contextually appropriate.
  
-* <sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), (https://github.com/SumanthRH/tokenization), [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),[NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html)</sub>
+* <sub>Sources:  [Tokenization, Lemmatization, Stemming, and Sentence Segmentation](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ), [Stanford: Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html),[NLTK Stemming and Lemmatization Documentation](https://www.nltk.org/howto/stem.html)</sub>
 
 #### Stop Word Removal
 Eliminating common words that carry less meaning (e.g., "the", "a", "is") to reduce noise in the data.

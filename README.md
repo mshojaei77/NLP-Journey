@@ -52,8 +52,8 @@ Breaking down text into smaller, meaningful units called tokens.
 | Topic | Materials |
 |--|--|
 | Introduction to Tokenization, Byte Pair Encoding (BPE) | <a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
-| Hugging Face Tokenizersl | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
-| Custom Tokenizer with Hugging Face Tokenizer | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Custom_Tokenizer_Implementation.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| Hugging Face Tokenizers | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| Create a Tokenizer with Hugging Face Tokenizers | <a target="_blank" href="https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/Custom_Tokenizer_Implementation.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
 <sub>Sources: [Hugging Face Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index), [ Everything About Tokenization](https://github.com/SumanthRH/tokenization), [Andrej Karpathy: Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE&t=1158s) </sub>
 

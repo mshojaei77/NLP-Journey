@@ -86,12 +86,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Introduction to the Bag-of-Words (BoW) Model - PyImageSearch](https://pyimagesearch.com/2022/07/04/introduction-to-the-bag-of-words-bow-model/), [A Quick Introduction to Bag of Words and TF-IDF](https://dataknowsall.com/blog/bowtfidf.html), [N-grams Made Simple & How To Implement In Python (NLTK) - Spot Intelligence](https://spotintelligence.com/n-grams-made-simple-how-to-implement-in-python-nltk/), [NLP Basics: Tokens, N-Grams, and Bag-of-Words Models - Zilliz blog](https://zilliz.com/learn/introduction-to-natural-language-processing-tokens-ngrams-bag-of-words-models), [Scikit-learn: Text Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Feature Engineering Project** | A project to demonstrate feature engineering techniques such as Bag-of-Words, TF-IDF, and N-grams. | [GitHub Repository](#) |
-
 ## 1.4 Word Embeddings
 
 * **Word2Vec:** Learns vector representations of words based on their co-occurrence patterns in text.
@@ -102,12 +96,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
     * **BERT:** Uses a bidirectional transformer to generate deep contextualized word embeddings.
 
 <sub>Sources: [Jay Alammar - Illustrated Word2Vec](https://jalammar.github.io/illustrated-word2vec/), [Stanford NLP: N-gram Language Models](https://nlp.stanford.edu/fsnlp/lm.html), [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html), [Stanford GloVe](https://nlp.stanford.edu/projects/glove/)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Word Embeddings Project** | A project to demonstrate various word embedding techniques such as Word2Vec, GloVe, FastText, ELMo, and BERT. | [GitHub Repository](#) |
 
 # Chapter 2: Essential NLP Tasks
 
@@ -125,11 +113,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Scikit-learn Text Classification](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html), [Hugging Face Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification), [FastText](https://github.com/facebookresearch/fastText)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Text Classification Project** | A project to demonstrate text classification using traditional and deep learning methods. | [GitHub Repository](#) |
 
 ## 2.2 Sentiment Analysis
 
@@ -140,11 +123,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [NLTK Sentiment Analysis](https://www.nltk.org/howto/sentiment.html), [TextBlob Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis), [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Sentiment Analysis Project** | A project to demonstrate sentiment analysis using lexicon-based, machine learning, and aspect-based approaches. | [GitHub Repository](#) |
 
 ## 2.3 Named Entity Recognition (NER)
 
@@ -155,11 +133,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Hugging Face NER](https://huggingface.co/docs/transformers/tasks/token-classification), [NLTK NER](https://www.nltk.org/book/ch07.html), [spaCy NER](https://spacy.io/usage/linguistic-features#named-entities), [MIT Information Extraction Toolkit](https://github.com/mit-nlp/MITIE)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Named Entity Recognition Project** | A project to demonstrate named entity recognition using rule-based and machine learning-based systems. | [GitHub Repository](#) |
 
 ## 2.4 Topic Modeling
 
@@ -168,12 +141,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 * **Non-Negative Matrix Factorization (NMF):** A linear algebra technique for topic modeling.
 
 <sub>Sources: [Gensim Topic Modeling](https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html), [Scikit-learn NMF](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf), [BigARTM](https://github.com/bigartm/bigartm)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Topic Modeling Project** | A project to demonstrate topic modeling using LDA and NMF. | [GitHub Repository](#) |
 
 # Chapter 3: Deep Learning for NLP
 
@@ -189,12 +156,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [3Blue1Brown - Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk), [freeCodeCamp - Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Neural Network Fundamentals Project** | A project to demonstrate the fundamentals of neural networks, including backpropagation and gradient descent. | [GitHub Repository](#) |
-
 ## 3.2 Deep Learning Frameworks
 
 * **PyTorch:**
@@ -206,12 +167,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
     * Computational efficiency
 
 <sub>Sources: [PyTorch Tutorials](https://pytorch.org/tutorials/), [TensorFlow Tutorials](https://www.tensorflow.org/tutorials), [JAX Documentation](https://jax.readthedocs.io/en/latest/)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Deep Learning Frameworks Project** | A project to demonstrate the use of deep learning frameworks such as PyTorch, TensorFlow, and JAX. | [GitHub Repository](#) |
 
 ## 3.3 Deep Learning Architectures for NLP
 
@@ -229,12 +184,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [colah's blog: Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/), [Andrej Karpathy: The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), [Understanding Convolutional Neural Networks for NLP](http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/), [Jay Alammar: The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/), [Google AI Blog: Transformer Networks](https://ai.googleblog.com/2017/08/transformer-networks-state-of-art.html)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Deep Learning Architectures for NLP Project** | A project to demonstrate various deep learning architectures for NLP, including RNNs, CNNs, and Transformers. | [GitHub Repository](#) |
-
 # Chapter 4: Large Language Models (LLMs)
 
 ## 4.1 The Transformer Architecture
@@ -249,12 +198,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/), [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Transformer Architecture Project** | A project to demonstrate the Transformer architecture, including attention mechanisms and positional encodings. | [GitHub Repository](#) |
-
 ## 4.2 LLM Architectures
 
 * **Generative Pre-trained Transformer Models (GPT):** Autoregressive models, good at text generation.
@@ -263,12 +206,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 * **BART (Bidirectional and Auto-Regressive Transformers):** Combines the strengths of BERT and GPT for both understanding and generation.
 
 <sub>Sources: [LLMDataHub](https://github.com/Zjh-819/LLMDataHub)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **LLM Architectures Project** | A project to demonstrate various LLM architectures, including GPT, BERT, T5, and BART. | [GitHub Repository](#) |
 
 ## 4.3 LLM Training
 
@@ -288,12 +225,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Fine-Tune Your Own Llama 2 Model](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html), [Hugging Face: Parameter-Efficient Fine-Tuning](https://huggingface.co/blog/peft), [LoRA Insights](https://lightning.ai/pages/community/lora-insights/), [Distilabel](https://github.com/argilla-io/distilabel), [An Introduction to Training LLMs using RLHF](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **LLM Training Project** | A project to demonstrate various LLM training techniques, including pre-training, post-training, fine-tuning, and adapting LLMs. | [GitHub Repository](#) |
-
 ## 4.4 LLM Evaluation
 
 * **Evaluation Benchmarks:**
@@ -306,12 +237,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Prompt Engineering Guide](https://www.promptingguide.ai/), [Lilian Weng: Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/), [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **LLM Evaluation Project** | A project to demonstrate various LLM evaluation techniques, including evaluation benchmarks, metrics, and prompt engineering. | [GitHub Repository](#) |
-
 ## 4.5 LLM Deployment
 
 * **Deployment Strategies:**
@@ -321,12 +246,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
     * **Edge Deployment:** Running LLMs on edge devices like smartphones and IoT devices.
 
 <sub>Sources: [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/), [SkyPilot](https://github.com/skypilot-org/skypilot), [Hugging Face Inference API](https://huggingface.co/inference-api)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **LLM Deployment Project** | A project to demonstrate various LLM deployment strategies, including local servers, cloud deployment, serverless functions, and edge deployment. | [GitHub Repository](#) |
 
 # Chapter 5: Multimodal Learning
 
@@ -339,12 +258,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [OpenAI CLIP](https://openai.com/research/clip), [Google AI Blog: ViT](https://ai.googleblog.com/2020/10/an-image-is-worth-16x16-words.html)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Multimodal LLMs Project** | A project to demonstrate multimodal LLMs, including CLIP and ViT. | [GitHub Repository](#) |
-
 ## 5.2 Vision-Language Tasks
 
 * **Image Captioning:** Generating descriptions for images.
@@ -352,12 +265,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 * **Visual Reasoning:** Performing logical reasoning based on visual input.
 
 <sub>Sources: [Hugging Face: Vision-Language Tasks](https://huggingface.co/docs/transformers/tasks/vision-language-modeling)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Vision-Language Tasks Project** | A project to demonstrate vision-language tasks, including image captioning, visual question answering, and visual reasoning. | [GitHub Repository](#) |
 
 ## 5.3 Multimodal Applications
 
@@ -368,12 +275,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
     * **LLMs for Robotics:** Using LLMs to control and interact with robots.
 
 <sub>Sources: [Stability AI: Stable Diffusion](https://stability.ai/stable-image), [OpenAI DALL-E 2](https://openai.com/dall-e-2), [Hugging Face: Video Understanding](https://huggingface.co/docs/transformers/tasks/video-classification)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Multimodal Applications Project** | A project to demonstrate multimodal applications, including text-to-image generation, video understanding, and emerging trends. | [GitHub Repository](#) |
 
 # Chapter 6: Deployment and Productionizing LLMs
 
@@ -386,12 +287,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/), [SkyPilot](https://github.com/skypilot-org/skypilot), [Hugging Face Inference API](https://huggingface.co/inference-api)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Deployment Strategies Project** | A project to demonstrate various deployment strategies for LLMs, including local servers, cloud deployment, serverless functions, and edge deployment. | [GitHub Repository](#) |
-
 ## 6.2 Inference Optimization
 
 * **Quantization:** Reducing the precision of model weights and activations to reduce memory footprint and speed up inference.
@@ -402,12 +297,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 
 <sub>Sources: [Introduction to Quantization](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html), [Flash-Attention](https://github.com/Dao-AILab/flash-attention)</sub>
 
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Inference Optimization Project** | A project to demonstrate various inference optimization techniques, including quantization, flash attention, knowledge distillation, pruning, and speculative decoding. | [GitHub Repository](#) |
-
 ## 6.3 Building with LLMs
 
 * **APIs:** Using pre-trained LLMs through APIs provided by OpenAI, Google, and others.
@@ -416,12 +305,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 * **Chatbots:** Building conversational interfaces powered by LLMs.
 
 <sub>Sources: [OpenAI API](https://platform.openai.com/), [Google AI Platform](https://cloud.google.com/ai-platform/), [Gradio](https://www.gradio.app/), [Streamlit](https://docs.streamlit.io/)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **Building with LLMs Project** | A project to demonstrate building applications with LLMs, including APIs, web frameworks, user interfaces, and chatbots. | [GitHub Repository](#) |
 
 ## 6.4 MLOps for LLMs
 
@@ -432,12 +315,6 @@ Techniques such as synonym replacement, random insertion, or back-translation to
 * **Data and Model Pipelines:** Building pipelines for data preprocessing, training, and deployment.
 
 <sub>Sources: [CometLLM](https://github.com/comet-ml/comet-llm), [MLflow](https://mlflow.org/)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **MLOps for LLMs Project** | A project to demonstrate MLOps for LLMs, including CI/CD, monitoring, model management, experiment tracking, and data and model pipelines. | [GitHub Repository](#) |
 
 ## 6.5 LLM Security
 
@@ -454,9 +331,3 @@ Techniques such as synonym replacement, random insertion, or back-translation to
     * **Output Monitoring**
 
 <sub>Sources: [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [Prompt Injection Primer](https://github.com/jthack/PIPE)</sub>
-
-### Practical Project
-
-| Project | Description | Codebase |
-|---|---|---|
-| **LLM Security Project** | A project to demonstrate LLM security, including prompt hacking, backdoors, and defensive measures. | [GitHub Repository](#) |

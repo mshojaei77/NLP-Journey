@@ -8,7 +8,7 @@
 - [x] **BPE Tokenizer Training:** Train a custom bpe tokenizer on a specific persian text dataset using Hugging Face Tokenizers. <a target="_blank" href="https://colab.research.google.com/drive/1tPIPqKL_pUrxTst-7X59-EyXVCK-z6Rm?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [ ] **Tokenization in Large Language Models:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video. <a target="_blank" href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [ ] **WordPiece  Tokenizer Training:**
-- [ ] **Training a new tokenizer from an old one:**
+- [ ] **Training a new tokenizer from an old one:** <a target="_blank" href="https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [ ] **Text Normalization Comparison:** Normalize a sample text using stemming and lemmatization with NLTK. Analyze the differences in the normalized outputs and discuss the pros and cons of each method.
 - [ ] **Feature Engineering with BoW and TF-IDF:** Extract BoW and TF-IDF features from a collection of documents (e.g., movie reviews) using scikit-learn.  Analyze the resulting feature vectors.
 - [ ] **N-gram Language Model Implementation:** Build a bigram language model using a text dataset (e.g., Project Gutenberg). Use the model to generate a short text sequence.

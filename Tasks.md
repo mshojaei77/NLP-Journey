@@ -6,12 +6,14 @@
 - [x] **Tokenization Exploration:** Learn about tokenization in Natural Language Processing (NLP) and explore various tokenization techniques including whitespace, NLTK, SpaCy and Byte Pair Encoding.  <a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [x] **Hugging Face tokenizers:** Demonstrate how to use Hugging Face tokenizers to prepare text data for NLP models. <a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [x] **BPE Tokenizer Training:** Train a custom bpe tokenizer on a specific persian text dataset using Hugging Face Tokenizers. <a target="_blank" href="https://colab.research.google.com/drive/1tPIPqKL_pUrxTst-7X59-EyXVCK-z6Rm?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-- [ ] **Build the GPT Tokenizer:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video. <a target="_blank" href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+- [ ] **Tokenization in Large Language Models:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video. <a target="_blank" href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+- [ ] **WordPiece  Tokenizer Training:**
+- [ ] **Training a new tokenizer from an old one:**
 - [ ] **Text Normalization Comparison:** Normalize a sample text using stemming and lemmatization with NLTK. Analyze the differences in the normalized outputs and discuss the pros and cons of each method.
 - [ ] **Feature Engineering with BoW and TF-IDF:** Extract BoW and TF-IDF features from a collection of documents (e.g., movie reviews) using scikit-learn.  Analyze the resulting feature vectors.
 - [ ] **N-gram Language Model Implementation:** Build a bigram language model using a text dataset (e.g., Project Gutenberg). Use the model to generate a short text sequence.
 - [ ] **Text Augmentation Experiment:** Implement synonym replacement and random insertion for text augmentation on a small dataset. Observe the impact on model performance after training a simple classifier with and without augmentation.
-
+- [ ] **Read Some Papers:** [Instruction Pre-Training: Language Models are Supervised Multitask Learners](https://arxiv.org/abs/2406.14491), [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288)
 
 **Module II: Word Embeddings and Language Modeling**
 

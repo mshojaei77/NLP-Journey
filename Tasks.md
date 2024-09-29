@@ -28,7 +28,7 @@ Large language models (LLMs) are revolutionizing the field of artificial intelli
 
 <a target="_blank" href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-- [ ] **Text Normalization Comparison:** Normalize a sample text using stemming and lemmatization with NLTK. Analyze the differences in the normalized outputs and discuss the pros and cons of each method.
+- [x] **Normalization: Stemming and Lemmatization in Customer Review Analysis:** Demonstrate the use of stemming and lemmatization techniques in analyzing customer reviews.
 - [ ] **Feature Engineering with BoW and TF-IDF:** Extract BoW and TF-IDF features from a collection of documents (e.g., movie reviews) using scikit-learn.  Analyze the resulting feature vectors.
 - [ ] **N-gram Language Model Implementation:** Build a bigram language model using a text dataset (e.g., Project Gutenberg). Use the model to generate a short text sequence.
 - [ ] **Text Augmentation Experiment:** Implement synonym replacement and random insertion for text augmentation on a small dataset. Observe the impact on model performance after training a simple classifier with and without augmentation.

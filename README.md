@@ -8,26 +8,11 @@ Large language models (LLMs) are revolutionizing the field of artificial intelli
 
 
 - [x] **Learn about NLP and its applications.**
-- [x] **Tokenization Exploration:** Learn about tokenization in Natural Language Processing (NLP) and explore various tokenization techniques including whitespace, NLTK, SpaCy and Byte Pair Encoding.
-
-<a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-- [x] **Hugging Face tokenizers:** Demonstrate how to use Hugging Face tokenizers to prepare text data for NLP models. 
-
-<a target="_blank" href="https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-- [x] **Training a new tokenizer from an old one:** 
-
-<a target="_blank" href="https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-- [x] **Custom Tokenizer Training:** Train custom tokenizers on custom text dataset with three different tokenizer models (BPE, WordPiece, and Unigram) 
-
-<a target="_blank" href="https://colab.research.google.com/drive/1uYFoxwCKwshkchBgQ4y4z9cDfKRlwZ-e?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-- [x] **Tokenization in Large Language Models:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video. 
-
-<a target="_blank" href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
+- [x] **Tokenization Exploration:** Learn about tokenization in Natural Language Processing (NLP) and explore various tokenization techniques including whitespace, NLTK, SpaCy and Byte Pair Encoding. [Open In Colab](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb)
+- [x] **Hugging Face tokenizers:** Demonstrate how to use Hugging Face tokenizers to prepare text data for NLP models. [Open In Colab](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb)
+- [x] **Training a new tokenizer from an old one:**  [Open In Colab](https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing)
+- [x] **Custom Tokenizer Training:** Train custom tokenizers on custom text dataset with three different tokenizer models (BPE, WordPiece, and Unigram) [Open In Colab](https://colab.research.google.com/drive/1uYFoxwCKwshkchBgQ4y4z9cDfKRlwZ-e?usp=sharing)
+- [x] **Tokenization in Large Language Models:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video.  [Open In Colab](https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing)
 - [x] **Normalization: Stemming and Lemmatization in Customer Review Analysis:** Demonstrate the use of stemming and lemmatization techniques in analyzing customer reviews.
 - [ ] **Feature Engineering with BoW and TF-IDF:** Extract BoW and TF-IDF features from a collection of documents (e.g., movie reviews) using scikit-learn.  Analyze the resulting feature vectors.
 - [ ] **N-gram Language Model Implementation:** Build a bigram language model using a text dataset (e.g., Project Gutenberg). Use the model to generate a short text sequence.

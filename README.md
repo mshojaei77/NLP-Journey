@@ -5,8 +5,8 @@
 - Training a new tokenizer from an old one [**Open In Colab**](https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing)
 - Train custom tokenizers on custom text dataset with three different tokenizer models (BPE, WordPiece, and Unigram) [**Open In Colab**](https://colab.research.google.com/drive/1uYFoxwCKwshkchBgQ4y4z9cDfKRlwZ-e?usp=sharing)
 - Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video.  [**Open In Colab**](https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing)
-## Word Embeddings
-
+## Embeddings
+- Understanding Word Embeddings for Text Data [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/LLMs-Journey/blob/main/ch1/Word_Embeddings.ipynb)
 ## Converting Tokens to IDs
 ## Adding Special Context Tokens
 ## Byte Pair Encoding

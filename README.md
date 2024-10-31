@@ -1,41 +1,6 @@
-# 🚀 Practical Guide to Learning Large Language Models (LLMs) with Modern NLP Methods in 2024 🚀
+# Large Language Models (LLMs) with Modern NLP 
 
 This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond. We'll leverage Jupyter Notebooks for hands-on practice.
-
-**Table of Contents**
-
-* [Chapter 1: Foundations of NLP](#chapter-1-foundations-of-nlp)
-  * [1.1 Introduction to NLP](#11-introduction-to-nlp)
-  * [1.2 Text Preprocessing](#12-text-preprocessing)
-  * [1.3 Feature Engineering](#13-feature-engineering)
-  * [1.4 Word Embeddings](#14-word-embeddings)
-* [Chapter 2: Essential NLP Tasks](#chapter-2-essential-nlp-tasks)
-  * [2.1 Text Classification](#21-text-classification)
-  * [2.2 Sentiment Analysis](#22-sentiment-analysis)
-  * [2.3 Named Entity Recognition (NER)](#23-named-entity-recognition-ner)
-  * [2.4 Topic Modeling](#24-topic-modeling)
-* [Chapter 3: Deep Learning for NLP](#chapter-3-deep-learning-for-nlp)
-  * [3.1 Neural Network Fundamentals](#31-neural-network-fundamentals)
-  * [3.2 Deep Learning Frameworks](#32-deep-learning-frameworks)
-  * [3.3 Deep Learning Architectures for NLP](#33-deep-learning-architectures-for-nlp)
-* [Chapter 4: Large Language Models (LLMs)](#chapter-4-large-language-models-llms)
-  * [4.1 The Transformer Architecture](#41-the-transformer-architecture)
-  * [4.2 LLM Architectures](#42-llm-architectures)
-  * [4.3 LLM Training](#43-llm-training)
-  * [4.4 LLM Evaluation](#44-llm-evaluation)
-  * [4.5 LLM Deployment](#45-llm-deployment)
-* [Chapter 5: Multimodal Learning](#chapter-5-multimodal-learning)
-  * [5.1 Multimodal LLMs](#51-multimodal-llms)
-  * [5.2 Vision-Language Tasks](#52-vision-language-tasks)
-  * [5.3 Multimodal Applications](#53-multimodal-applications)
-* [Chapter 6: Deployment and Productionizing LLMs](#chapter-6-deployment-and-productionizing-llms)
-  * [6.1 Deployment Strategies](#61-deployment-strategies)
-  * [6.2 Inference Optimization](#62-inference-optimization)
-  * [6.3 Building with LLMs](#63-building-with-llms)
-  * [6.4 MLOps for LLMs](#64-mlops-for-llms)
-  * [6.5 LLM Security](#65-llm-security)
-
----
 
 # Chapter 1: Foundations of NLP
 

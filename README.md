@@ -7,12 +7,19 @@
 - Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video.  [**Open In Colab**](https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing)
 ## Embeddings
 - Understanding Word Embeddings for Text Data [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/LLMs-Journey/blob/main/ch1/Word_Embeddings.ipynb)
-## Converting Tokens to IDs
-## Adding Special Context Tokens
-## Byte Pair Encoding
-## Data Sampling with a Sliding Window
-## Creating Token Embeddings
-## Encoding Word Positions
+Here's an expanded outline with 3 additional sections for Embeddings:
+
+## Embeddings
+- Understanding Word Embeddings for Text Data [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/LLMs-Journey/blob/main/ch1/Word_Embeddings.ipynb)
+- Visualizing Embeddings using Dimensionality Reduction (t-SNE, PCA)
+- Comparing Different Embedding Techniques (Word2Vec vs GloVe vs FastText)
+- Using Pre-trained Embeddings
+- Embedding Layers in Large Language Models (LLMs)
+- Sentence/Paragraph/Document embeddings
+- Fine-tuning Embeddings for Domain-Specific Tasks
+- Cross-lingual Embeddings and Multilingual Applications
+- Evaluating Embedding Quality and Performance Metrics
+
 ---
 - Attention Mechanisms
     - Modeling Long Sequences: Challenges

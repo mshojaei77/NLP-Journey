@@ -4,57 +4,43 @@ Large language models (LLMs) are revolutionizing the field of artificial intelli
 
 **This journey is structured into modules, each focusing on a specific aspect of LLMs, and includes practical tasks designed to solidify your understanding through implementation and experimentation.**
 
-## Module I: Foundations of NLP and Text Data
+## Module I: Working with Text Data
 
-
-- [x] **Learn about NLP and its applications.**
 - [x] **Tokenization Exploration:** Learn about tokenization in Natural Language Processing (NLP) and explore various tokenization techniques including whitespace, NLTK, SpaCy and Byte Pair Encoding. [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb)
 - [x] **Hugging Face tokenizers:** Demonstrate how to use Hugging Face tokenizers to prepare text data for NLP models. [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb)
 - [x] **Training a new tokenizer from an old one:**  [Open In Colab](https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing)
 - [x] **Custom Tokenizer Training:** Train custom tokenizers on custom text dataset with three different tokenizer models (BPE, WordPiece, and Unigram) [**Open In Colab**](https://colab.research.google.com/drive/1uYFoxwCKwshkchBgQ4y4z9cDfKRlwZ-e?usp=sharing)
 - [x] **Tokenization in Large Language Models:** Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video.  [**Open In Colab**](https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing)
-- [x] **Normalization: Stemming and Lemmatization in Customer Review Analysis:** Demonstrate the use of stemming and lemmatization techniques in analyzing customer reviews.
-- [ ] **Feature Engineering with BoW and TF-IDF:** Extract BoW and TF-IDF features from a collection of documents (e.g., movie reviews) using scikit-learn.  Analyze the resulting feature vectors.
 - [ ] **N-gram Language Model Implementation:** Build a bigram language model using a text dataset (e.g., Project Gutenberg). Use the model to generate a short text sequence.
-- [ ] **Text Augmentation Experiment:** Implement synonym replacement and random insertion for text augmentation on a small dataset. Observe the impact on model performance after training a simple classifier with and without augmentation.
-- [ ] **Read Some Papers:** [Instruction Pre-Training: Language Models are Supervised Multitask Learners](https://arxiv.org/abs/2406.14491), [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288)
-
-## Module II: Word Embeddings and Language Modeling
-
 - [ ] **Word Embedding Training and Visualization:** Train word embeddings using Word2Vec, GloVe, and FastText on a text corpus (e.g., Wikipedia). Visualize the embeddings using t-SNE and explore word similarities and analogies.
 - [ ] **Pre-trained Embedding Exploration:** Explore the properties of pre-trained word embeddings (e.g., GloVe) by performing word similarity and analogy tasks.
 - [ ] **Neural Language Model Implementation:** Implement a simple neural language model using an RNN in PyTorch. Train it on a text dataset and evaluate its perplexity.
 - [ ] **Masked Language Model Training:** Implement a masked language model training loop in PyTorch using a transformer encoder.
 
-## Module III: Transformer Architectures and their Components
+## Module II: LLM Architectures
 
 - [ ] **Self-Attention Implementation:** Implement a basic self-attention mechanism in PyTorch. Visualize the attention weights to understand how the model attends to different parts of the input sequence.
 - [ ] **Multi-Head Attention Comparison:** Implement multi-head attention and compare its performance with single-head attention on a sequence-to-sequence task (e.g., machine translation).
 - [ ] **Transformer Encoder Implementation:** Implement a transformer encoder with positional encoding and feed-forward networks in PyTorch. Analyze the output representations.
 - [ ] **Layer Normalization Experiment:** Explore different layer normalization techniques (LayerNorm, RMSNorm) in a transformer model. Compare their impact on training stability and performance.
 
-## Module IV: Understanding Key LLM Architectures
+## Module V: Pre-training Large Language Models
+- [ ] **Data Collection:** Identify Data Sources, Gather Data, Ensure Data Diversity
+- [ ] **Data Preprocessing:** Clean Data, Normalize Text, Tokenization
+- [ ] **Simple Language Model Pre-training:** Pre-train a small language model on a text dataset (e.g., a subset of Wikipedia) using PyTorch. Evaluate its performance using perplexity.
+- [ ] **Hyperparameter Optimization for Pre-training:** Experiment with different hyperparameters (learning rate, batch size) to optimize the pre-training performance of a small language model.
+- [ ] **FLOPS Analysis:** Analyze the FLOPS (floating-point operations per second) of different pre-trained language models and compare their computational costs.
+
+## Module VI: Fine-tuning LLMs 
 
 - [ ] **GPT Fine-tuning for Text Generation:** Fine-tune a pre-trained GPT model for text generation using Hugging Face Transformers. Generate different text formats (e.g., stories, poems) using the fine-tuned model.
 - [ ] **BERT Fine-tuning for Text Classification:** Fine-tune a pre-trained BERT model for text classification (e.g., sentiment analysis) using Hugging Face Transformers. Evaluate its performance on a benchmark dataset.
 - [ ] **T5 Fine-tuning for Summarization:** Fine-tune a pre-trained T5 model for text summarization using Hugging Face Transformers. Evaluate the quality of the generated summaries using ROUGE scores.
 - [ ] **Hugging Face Model Hub Exploration:** Explore and experiment with different pre-trained models from the Hugging Face Model Hub for tasks like question answering and translation.
-
-## Module V: Pre-training Large Language Models
-
-- [ ] **Simple Language Model Pre-training:** Pre-train a small language model on a text dataset (e.g., a subset of Wikipedia) using PyTorch. Evaluate its performance using perplexity.
-- [ ] **Hyperparameter Optimization for Pre-training:** Experiment with different hyperparameters (learning rate, batch size) to optimize the pre-training performance of a small language model.
-- [ ] **FLOPS Analysis:** Analyze the FLOPS (floating-point operations per second) of different pre-trained language models and compare their computational costs.
-
-## Module VI: Fine-tuning LLMs for Downstream Tasks 
-
 - [ ] **LLM Fine-tuning for Text Classification:** Fine-tune a pre-trained LLM for text classification (e.g., topic classification) using a labeled dataset. Evaluate its performance using accuracy, precision, recall, and F1-score.
 - [ ] **IMDB Movie Review Fine-tuning:** Fine-tune different pre-trained LLMs on the IMDB movie reviews dataset for sentiment analysis. Compare their performance and analyze the results.
 - [ ] **Data Imbalance Handling:** Implement techniques for handling data imbalance (oversampling, undersampling) during fine-tuning of an LLM for a classification task with an imbalanced dataset.
 - [ ] **Instruction Fine-tuning:** Fine-tune an LLM using an instruction dataset (e.g., Alpaca) and evaluate its performance on following instructions using appropriate metrics.
-
-## Module VII: Parameter-Efficient Fine-Tuning (PEFT) and RLHF
-
 - [ ] **LoRA Implementation:** Implement LoRA for fine-tuning a pre-trained LLM on a downstream task. Compare its performance and efficiency with standard fine-tuning.
 - [ ] **PEFT Techniques Comparison:** Implement and compare different PEFT techniques (LoRA, Adapters) on a specific task. Analyze their impact on memory footprint, training time, and performance.
 - [ ] **Preference Dataset Creation:** Build a simple preference dataset for evaluating LLM outputs on a specific task (e.g., summarization). Collect human preferences for different model outputs.

@@ -2,16 +2,7 @@
 
 This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond. We'll leverage Jupyter Notebooks for hands-on practice.
 
-# Chapter 1: Foundations of NLP
-
-## 1.1 Introduction to NLP
-
-* **[Introduction to Natural Language Processing and fundamental linguistic concepts](https://github.com/mshojaei77/NLP-Journey/blob/main/ch1/nlp-intro.md)** 
-
-<sub>Sources: [Basics of Linguistics](https://www.ai.uni-hannover.de/fileadmin/ai/teaching/inlp-23s/part02-linguistics.pdf) </sub>
-
-## 1.2 Text Preprocessing
-
+# Foundations of NLP
 #### Tokenization:
 Breaking down text into smaller, meaningful units called tokens.
 | Topic | Materials |

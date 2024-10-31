@@ -8,9 +8,8 @@
 
 ## Embeddings
 - Understanding Word Embeddings for Text Data [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/LLMs-Journey/blob/main/ch1/Word_Embeddings.ipynb)
-- Visualizing Embeddings using Dimensionality Reduction (t-SNE, PCA)
-- Comparing Different Embedding Techniques (Word2Vec vs GloVe vs FastText)
-- Using Pre-trained Embeddings
+- Using Pre-trained Embeddings + Visualizing Embeddings using Dimensionality Reduction (t-SNE, PCA) [**Open In Colab**](https://github.com/mshojaei77/LLMs-Journey/blob/main/ch1/Pre_trained_Embeddings.ipynb)
+- Comparing Different Embedding Techniques (Word2Vec vs GloVe vs FastText) [**Open In Colab**](https://github.com/mshojaei77/LLMs-Journey/blob/main/ch1/Embedding_Techniques.ipynb)
 - Embedding Layers in Large Language Models (LLMs)
 - Sentence/Paragraph/Document embeddings
 - Fine-tuning Embeddings for Domain-Specific Tasks

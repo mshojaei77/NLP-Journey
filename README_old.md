@@ -1,7 +1,7 @@
 # Large Language Models (LLMs) with Modern NLP 
 
 This repository provides a comprehensive guide for learning Natural Language Processing (NLP) from the ground up, progressing to the understanding and application of Large Language Models (LLMs). It focuses on practical skills needed for NLP and LLM-related roles in 2024 and beyond. We'll leverage Jupyter Notebooks for hands-on practice.
-
+ 
 # Foundations of NLP
 
 #### Tokenization:

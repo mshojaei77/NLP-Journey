@@ -1,19 +1,19 @@
-## Working with Text Data
-
-### Word Embeddings
-### Tokenizing Text
+# Working with Text Data
+## Tokenizing Text
 - Learn about tokenization in Natural Language Processing (NLP) and explore various tokenization techniques including whitespace, NLTK, SpaCy and Byte Pair Encoding. [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Tokenization_BPE.ipynb)
 - Demonstrate how to use Hugging Face tokenizers to prepare text data for NLP models. [**Open In Colab**](https://colab.research.google.com/github/mshojaei77/NLP-Journey/blob/main/ch1/Hugging_Face_Tokenizers.ipynb)
 - Training a new tokenizer from an old one [**Open In Colab**](https://colab.research.google.com/drive/1452WFn66MZzYylTNcL6hV5Zd45sskzs7?usp=sharing)
 - Train custom tokenizers on custom text dataset with three different tokenizer models (BPE, WordPiece, and Unigram) [**Open In Colab**](https://colab.research.google.com/drive/1uYFoxwCKwshkchBgQ4y4z9cDfKRlwZ-e?usp=sharing)
 - Build a Byte Pair Encoding (BPE) tokenizer from scratch, similar to the one used in OpenAI's GPT models base on Andrej Karpathy's [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) video.  [**Open In Colab**](https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing)
-### Converting Tokens to IDs
-### Adding Special Context Tokens
-### Byte Pair Encoding
-### Data Sampling with a Sliding Window
-### Creating Token Embeddings
-### Encoding Word Positions
+## Word Embeddings
 
+## Converting Tokens to IDs
+## Adding Special Context Tokens
+## Byte Pair Encoding
+## Data Sampling with a Sliding Window
+## Creating Token Embeddings
+## Encoding Word Positions
+---
 - Attention Mechanisms
     - Modeling Long Sequences: Challenges
     - Capturing Data Dependencies with Attention Mechanisms
